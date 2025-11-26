@@ -25,6 +25,7 @@ struct ModelEditorView: View {
                         delete(model: item)
                     } label: {
                         Image(systemName: "minus")
+                            .frame(width: 15,height: 15)
                     }.buttonBorderShape(.circle)
                 }
             }

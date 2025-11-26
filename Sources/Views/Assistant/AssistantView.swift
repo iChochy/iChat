@@ -22,7 +22,7 @@ struct AssistantView: View {
 
     var body: some View {
         ScrollView {
-            VStack{
+            VStack {
                 HStack {
                     Text("AI Assistants")
                         .font(.title)
@@ -41,8 +41,9 @@ struct AssistantView: View {
                 LazyVGrid(columns: gridLayout) {
                     ForEach(assistants) { item in
                         HStack {
-                            Image(systemName: "bookmark.circle")
+                            Image(systemName: "bookmark")
                                 .font(.system(size: 40))
+                                .padding()
                             VStack(alignment: .leading) {
                                 HStack {
                                     Text(item.title)
@@ -62,24 +63,35 @@ struct AssistantView: View {
                                 } label: {
                                     Image(
                                         systemName: item.isFavorite
-                                        ? "heart.slash.circle" : "heart.circle"
+                                            ? "heart.slash" : "heart"
+                                    ).frame(
+                                        width: 15,
+                                        height: 15
                                     )
                                 }.help(
                                     item.isFavorite
-                                    ? "Cancel Favorites" : "Favorites"
+                                        ? "Cancel Favorites" : "Favorites"
                                 )
                                 Button {
                                     editAssistant = item
                                 } label: {
-                                    Image(systemName: "pencil.circle")
+                                    Image(systemName: "slider.vertical.3")
+                                        .frame(
+                                            width: 15,
+                                            height: 15
+                                        )
                                 }.help("Edit assistant")
                                     .padding(.leading, 30)
                                 Button {
                                     deleteAssistant(assistant: item)
                                 } label: {
-                                    Image(systemName: "minus.circle")
+                                    Image(systemName: "trash")
+                                        .frame(
+                                            width: 15,
+                                            height: 15
+                                        )
                                 }.help("Delete assistant")
-                            }.buttonStyle(.plain)
+                            }.buttonBorderShape(.circle)
                         }
                         .padding(10)
                         .background(Color.gray.opacity(0.2))

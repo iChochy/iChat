@@ -20,7 +20,7 @@ struct InputAreaView: View {
             TextEditor(text: $chatViewModel.userInput)
                 .scrollContentBackground(.hidden)
                 .disabled(chatViewModel.isSending)
-                .frame(height: min(200, max(22, textHeight)))
+                .frame(height: min(200, max(28, textHeight)))
                 .background(
                     Text(
                         chatViewModel.userInput.isEmpty
@@ -43,10 +43,10 @@ struct InputAreaView: View {
                     )
                     .allowsHitTesting(false)
                 )
-                .padding(.leading,10)
-                .padding(.vertical,5)
-                .font(.title2)
+                .padding(10)
+                .font(.title)
                 .scrollIndicators(.hidden)
+            
             Button {
                 sendMessage()
             } label: {
@@ -54,11 +54,11 @@ struct InputAreaView: View {
                     ZStack {
                         ProgressView().scaleEffect(0.8)
                         Image(systemName: "arrow.up.circle.fill")
-                            .font(.system(size: 30)).hidden()
+                            .font(.system(size: 45)).hidden()
                     }
                 } else {
                     Image(systemName: "arrow.up.circle.fill")
-                        .font(.system(size: 30))
+                        .font(.system(size: 45))
                 }
             }
             .keyboardShortcut(.return, modifiers: .command)
@@ -71,13 +71,13 @@ struct InputAreaView: View {
             .buttonStyle(.link)
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 18)
+            RoundedRectangle(cornerRadius: 25)
                 .stroke(Color.gray.opacity(0.8), lineWidth: 2)
         )
         .background(.quaternary)
         .background()
-        .cornerRadius(18)
-        .padding(.bottom)
+        .cornerRadius(25)
+        .padding(.bottom,10)
         .padding(.horizontal, 50)
         .shadow(radius: 10)
     }

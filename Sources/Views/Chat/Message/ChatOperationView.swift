@@ -20,20 +20,23 @@ struct ChatOperationView: View {
         .foregroundColor(.gray)
         HStack {
             ShareLink(item: message.content) {
-                Image(systemName: "square.and.arrow.up.circle")
+                Image(systemName: "square.and.arrow.up")
+                    .frame(width: 15,height: 15)
             }
             Button {
                 copyMessage()
             } label: {
-                Image(systemName: "document.circle")
+                Image(systemName: "document.on.document")
+                    .frame(width: 15,height: 15)
             }
             Button {
                 deleteMessage()
             } label: {
-                Image(systemName: "trash.circle")
+                Image(systemName: "trash")
+                    .frame(width: 15,height: 15)
             }
         }
-        .buttonStyle(.plain)
+        .buttonBorderShape(.circle)
         HStack {
             Spacer()
         }

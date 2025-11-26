@@ -48,8 +48,8 @@ struct AssistantSideView: View {
                         Button {
                             item.isFavorite.toggle()
                         } label: {
-                            Image(systemName: "heart.slash.circle")
-                        }.buttonStyle(.plain)
+                            Image(systemName: "heart.slash")
+                        }.buttonBorderShape(.circle)
                             .help("Cancel Favorites")
                             .shadow(radius: 10)
                     }
@@ -71,6 +71,7 @@ struct AssistantSideView: View {
                     openWindow(id: "Assistant")
                 } label: {
                     Image(systemName: "ellipsis")
+                        .frame(width: 15, height: 15)
                 }.buttonBorderShape(.circle)
                     .help("All assistant information")
             }

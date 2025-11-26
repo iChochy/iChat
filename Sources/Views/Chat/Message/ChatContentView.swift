@@ -23,6 +23,7 @@ struct ChatContentView: View {
             case .user:
                 Text(message.content)
                     .padding(10)
+                    .padding(.horizontal,5)
                     .fixedSize(horizontal: false, vertical: true)
                     .background(messageBackgroundColor)
                     .foregroundStyle(messageForegroundColor)

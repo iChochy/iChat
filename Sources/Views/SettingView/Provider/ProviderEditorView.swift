@@ -63,6 +63,7 @@ struct ProviderEditorView: View {
                     showAlert()
                 } label: {
                     Image(systemName: "trash")
+                        .frame(width: 15, height: 15)
                 }
                 .buttonBorderShape(.circle)
                 .alert("确认删除吗？", isPresented: $isShowAlert) {
