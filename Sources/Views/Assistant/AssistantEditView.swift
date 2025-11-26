@@ -12,7 +12,7 @@ struct AssistantEditView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) var dismiss
     @Query var providers: [AIProvider] = []
-    
+
     @Query var assistants: [Assistant] = []
 
     @State var selectedAssistant: Assistant?
@@ -45,9 +45,9 @@ struct AssistantEditView: View {
                         }
                         Text("\(assistant.temperature, specifier: "%.1f")")
                     }
-                   
+
                 }
-                HStack{
+                HStack {
                     Text("Model").padding(.leading, 35)
                     Menu(getDefaultModelName()) {
                         ForEach(providers) { provider in
@@ -62,8 +62,9 @@ struct AssistantEditView: View {
                             }
                         }
                     }
+                    Spacer()
                 }
-                
+
                 HStack(alignment: .top) {
                     Text("Prompt").padding(.leading, 30)
                     TextEditor(text: $assistant.prompt)
@@ -80,13 +81,14 @@ struct AssistantEditView: View {
             }.textFieldStyle(.roundedBorder)
                 .padding()
         } label: {
-            Text("Edit").font(.title).bold()
+            Label("Edit", systemImage: "slider.vertical.3")
+                .font(.title).bold()
         }.padding()
         Button("Save") {
             dismiss()
-        }.padding(.bottom).keyboardShortcut(.return,modifiers: [])
+        }.padding(.bottom).keyboardShortcut(.return, modifiers: [])
     }
-    
+
     /// 获取默认模型的名字
     /// - Returns: 默认模型的名字
     private func getDefaultModelName() -> String {
@@ -96,11 +98,9 @@ struct AssistantEditView: View {
         }
         return name
     }
-    
-    
-    private func setDefaultModel(model:AIModel){
+
+    private func setDefaultModel(model: AIModel) {
         assistant.model = model
     }
-    
-    
+
 }

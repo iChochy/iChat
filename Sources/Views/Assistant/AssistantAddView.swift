@@ -12,10 +12,9 @@ struct AssistantAddView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) var dismiss
     @Query var providers: [AIProvider] = []
-    
+
     @State var assistant: Assistant
     @State var selectModel: AIModel?
-    
 
     var body: some View {
         GroupBox {
@@ -35,8 +34,7 @@ struct AssistantAddView: View {
                         Text("Enable").tag(true)
                         Text("Disable").tag(false)
                     }.pickerStyle(.segmented)
-                    
-                    
+
                     HStack {
                         Slider(
                             value: $assistant.temperature,
@@ -47,9 +45,9 @@ struct AssistantAddView: View {
                         }
                         Text("\(assistant.temperature, specifier: "%.1f")")
                     }
-                   
+
                 }
-                HStack{
+                HStack {
                     Text("Model").padding(.leading, 35)
                     Menu(getDefaultModelName()) {
                         ForEach(providers) { provider in
@@ -64,8 +62,9 @@ struct AssistantAddView: View {
                             }
                         }
                     }
+                    Spacer()
                 }
-                
+
                 HStack(alignment: .top) {
                     Text("Prompt").padding(.leading, 30)
                     TextEditor(text: $assistant.prompt)
@@ -82,9 +81,10 @@ struct AssistantAddView: View {
             }.textFieldStyle(.roundedBorder)
                 .padding()
         } label: {
-            Text("Add").font(.title).bold()
+            Label("Add", systemImage: "plus")
+                .font(.title).bold()
         }.padding()
-        HStack{
+        HStack {
             Spacer()
             Button("Close") {
                 dismiss()
@@ -92,17 +92,16 @@ struct AssistantAddView: View {
             Button("Add") {
                 addAssistant()
                 dismiss()
-            }.keyboardShortcut(.return,modifiers: [])
+            }.keyboardShortcut(.return, modifiers: [])
         }.padding()
     }
-    
-    
-    private func addAssistant(){
+
+    private func addAssistant() {
         assistant.model = selectModel
         modelContext.insert(assistant)
         try? modelContext.save()
     }
-    
+
     /// 获取默认模型的名字
     /// - Returns: 默认模型的名字
     private func getDefaultModelName() -> String {
@@ -112,11 +111,9 @@ struct AssistantAddView: View {
         }
         return name
     }
-    
-    
-    private func setDefaultModel(model:AIModel){
+
+    private func setDefaultModel(model: AIModel) {
         selectModel = model
     }
-    
-    
+
 }
