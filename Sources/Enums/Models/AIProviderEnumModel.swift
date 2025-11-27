@@ -87,6 +87,20 @@ class AIProviderEnumModel {
             service: service
         )
     }
+    static func getCloudflare() -> AIProviderEnumModel {
+        let title = "Cloudflare(AI Gateway)"
+        let icon = ""
+        let supportUrl = "https://developers.cloudflare.com/ai-gateway/usage/chat-completion/"
+        let APIURL = "https://gateway.ai.cloudflare.com/v1/{account_id}/{gateway_id}"
+        let service = CloudflareService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
     static func getCustom() -> AIProviderEnumModel {
         let title = "Custom(OpenAI)"
         let icon = ""

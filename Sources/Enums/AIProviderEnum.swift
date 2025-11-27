@@ -12,6 +12,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case openAI = "OpenAI"
     case gemini = "Gemini"
     case deepSeek = "DeepSeek"
+    case cloudflare = "Cloudflare"
     case custom = "Custom(OpenAI)"
 
     var id: String { self.rawValue }
@@ -22,6 +23,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
         .openAI:AIProviderEnumModel.getOpenAI(),
         .gemini:AIProviderEnumModel.getGemini(),
         .deepSeek:AIProviderEnumModel.getDeepSeek(),
+        .cloudflare:AIProviderEnumModel.getCloudflare(),
         .custom:AIProviderEnumModel.getCustom()
     ]
     

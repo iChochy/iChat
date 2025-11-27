@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1045A4552DFF16140062042A /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045A4542DFF16140062042A /* SessionView.swift */; };
+		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
 		10C9F6AD2E05295A00A8719E /* ResponseContentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */; };
 		B42DB27F2DFA8C1A005EF8BE /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB27E2DFA8C1A005EF8BE /* AssistantView.swift */; };
 		B42DB2812DFA8F7B005EF8BE /* AssistantEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB2802DFA8F7B005EF8BE /* AssistantEditView.swift */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		1045A4542DFF16140062042A /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
 		10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContentHelper.swift; sourceTree = "<group>"; };
 		B400B5062DEF3DAB002CF2B4 /* README_zh.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README_zh.md; sourceTree = "<group>"; };
 		B400B5082DEF4199002CF2B4 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			children = (
 				B457E88E2DBFA74100598C36 /* GrokService.swift */,
 				B440D2742DDF72AC0064B3BE /* GeminiService.swift */,
+				107710F12ED89A6E00EB62D4 /* CloudflareService.swift */,
 				B49731592DF1C55C004D9DCD /* DeepSeekService.swift */,
 				B457E8802DBB775F00598C36 /* APIResponseMessage.swift */,
 			);
@@ -435,7 +438,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					B4806FAB2D9B8047004C952C = {
 						CreatedOnToolsVersion = 16.2;
@@ -531,6 +534,7 @@
 				B49731712DF74FAF004D9DCD /* PromptEnumModel.swift in Sources */,
 				B457E8892DBFA6DA00598C36 /* ChatRoleEnum.swift in Sources */,
 				B457E88B2DBFA6EA00598C36 /* ChatSession.swift in Sources */,
+				107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */,
 				B49731612DF46B9C004D9DCD /* CustomButtonView.swift in Sources */,
 				B4A22C792DEC5E460091CB68 /* AppearanceEnum.swift in Sources */,
 				B44725D12DC1FA8A00B9B31B /* InputAreaView.swift in Sources */,
@@ -609,6 +613,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -666,6 +671,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -680,11 +686,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 iChochy";
@@ -715,11 +725,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 iChochy";

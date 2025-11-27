@@ -7,11 +7,11 @@
 
 import Foundation
 
-/// Gemini 客户端实现
-class GeminiService: AIProtocol {
+/// Cloudflare客户端实现
+class CloudflareService: AIProtocol {
     
-    private let chatPath = "/v1beta/openai/chat/completions"
-    private let modelPath = "/v1beta/openai/models"
+    private let chatPath = "/compat/chat/completions"
+    private let modelPath = "/compat/openai/models"
     private let session: URLSession = .shared
 
     func getModels(provider: AIProvider) async throws -> [Model] {
