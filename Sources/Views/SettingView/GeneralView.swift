@@ -11,8 +11,8 @@ struct GeneralView: View {
     let title = "General"
     let icon = "gear"
     @AppStorage("fontSize") var fontSize = 15.0
-    @AppStorage("nicknames") var nickname =
-        Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
+    @AppStorage("nickname") var nickname =
+        Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "iChat"
     @AppStorage("language") var language = LanguageEnum.auto
     @AppStorage("appearance") var appearance = AppearanceEnum.system
     @AppStorage("isInserted") var isInserted = true

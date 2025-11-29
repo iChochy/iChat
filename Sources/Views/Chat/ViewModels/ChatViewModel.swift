@@ -12,9 +12,11 @@ import SwiftUI
 @MainActor
 class ChatViewModel: ObservableObject {
     @AppStorage("language") var language = LanguageEnum.auto
+    @AppStorage("nickname") var nickname =
+        Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "iChat"
     @Published var userInput: String = ""
     @Published var isSending: Bool = false
-    @AppStorage("nickname") var nickname = "AI Chat"
+
     
     func sendMessage(session:ChatSession,modelContext:ModelContext) {
         let userContent = userInput.trimmingCharacters(
