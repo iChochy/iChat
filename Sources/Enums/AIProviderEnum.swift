@@ -9,11 +9,12 @@
 // AI 提供商标识符 (可扩展)
 enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case grok = "Grok"
+    case deepSeek = "DeepSeek"
     case openAI = "OpenAI"
     case gemini = "Gemini"
-    case deepSeek = "DeepSeek"
-    case cloudflare = "Cloudflare"
+    case zenMux = "ZenMux"
     case custom = "Custom(OpenAI)"
+    case cloudflare = "Cloudflare"
 
     var id: String { self.rawValue }
     var name: String { self.rawValue }
@@ -22,6 +23,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
         .grok:AIProviderEnumModel.getGrok(),
         .openAI:AIProviderEnumModel.getOpenAI(),
         .gemini:AIProviderEnumModel.getGemini(),
+        .zenMux:AIProviderEnumModel.getZenMuxAI(),
         .deepSeek:AIProviderEnumModel.getDeepSeek(),
         .cloudflare:AIProviderEnumModel.getCloudflare(),
         .custom:AIProviderEnumModel.getCustom()

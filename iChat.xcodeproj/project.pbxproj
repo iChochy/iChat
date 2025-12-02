@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1045A4552DFF16140062042A /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045A4542DFF16140062042A /* SessionView.swift */; };
 		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
+		107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */; };
 		10C9F6AD2E05295A00A8719E /* ResponseContentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */; };
 		B42DB27F2DFA8C1A005EF8BE /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB27E2DFA8C1A005EF8BE /* AssistantView.swift */; };
 		B42DB2812DFA8F7B005EF8BE /* AssistantEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB2802DFA8F7B005EF8BE /* AssistantEditView.swift */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		1045A4542DFF16140062042A /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
+		107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenMuxService.swift; sourceTree = "<group>"; };
 		10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContentHelper.swift; sourceTree = "<group>"; };
 		B400B5062DEF3DAB002CF2B4 /* README_zh.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README_zh.md; sourceTree = "<group>"; };
 		B400B5082DEF4199002CF2B4 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
@@ -290,9 +292,10 @@
 			isa = PBXGroup;
 			children = (
 				B457E88E2DBFA74100598C36 /* GrokService.swift */,
+				107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */,
 				B440D2742DDF72AC0064B3BE /* GeminiService.swift */,
-				107710F12ED89A6E00EB62D4 /* CloudflareService.swift */,
 				B49731592DF1C55C004D9DCD /* DeepSeekService.swift */,
+				107710F12ED89A6E00EB62D4 /* CloudflareService.swift */,
 				B457E8802DBB775F00598C36 /* APIResponseMessage.swift */,
 			);
 			path = Services;
@@ -507,6 +510,7 @@
 				B497315C2DF1DA49004D9DCD /* MenuBarExtraView.swift in Sources */,
 				B440D26A2DDDB6E00064B3BE /* ProviderEditorView.swift in Sources */,
 				B497317D2DF8580B004D9DCD /* SessionSideView.swift in Sources */,
+				107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */,
 				B4A22C682DEAC7180091CB68 /* MarkdownTable.swift in Sources */,
 				B4A22C692DEAC7180091CB68 /* MarkdownHeader.swift in Sources */,
 				B4A22C6A2DEAC7180091CB68 /* MarkdownBlock.swift in Sources */,

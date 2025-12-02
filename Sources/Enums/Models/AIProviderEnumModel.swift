@@ -58,6 +58,20 @@ class AIProviderEnumModel {
             service: service
         )
     }
+    static func getZenMuxAI() -> AIProviderEnumModel {
+        let title = "ZenMux(OpenAI)"
+        let icon = ""
+        let supportUrl = "https://zenmux.ai/invite/3KA0VI"
+        let APIURL = "https://zenmux.ai/api"
+        let service = ZenMuxService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
 
     static func getGemini() -> AIProviderEnumModel {
         let title = "Google(Gemini)"

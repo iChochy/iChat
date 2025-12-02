@@ -17,8 +17,7 @@ class ChatViewModel: ObservableObject {
     @Published var userInput: String = ""
     @Published var isSending: Bool = false
 
-    
-    func sendMessage(session:ChatSession,modelContext:ModelContext) {
+    func sendMessage(session: ChatSession, modelContext: ModelContext) {
         let userContent = userInput.trimmingCharacters(
             in: .whitespacesAndNewlines
         )
@@ -36,7 +35,7 @@ class ChatViewModel: ObservableObject {
             role: .user,
             session: session
         )
-        
+
         if session.title.isEmpty {
             session.title = userContent
         }
@@ -46,12 +45,15 @@ class ChatViewModel: ObservableObject {
         try? modelContext.save()
 
         Task {
-            await handleAIResponse(session: session,modelContext:modelContext)
+            await handleAIResponse(session: session, modelContext: modelContext)
         }
     }
 
-    private func handleAIResponse(session:ChatSession,modelContext:ModelContext) async {
-        defer{
+    private func handleAIResponse(
+        session: ChatSession,
+        modelContext: ModelContext
+    ) async {
+        defer {
             isSending = false
         }
 
@@ -61,17 +63,18 @@ class ChatViewModel: ObservableObject {
         }
 
         guard let provider = model.provider else {
-            session.message =  String(describing: AIError.MissingProvider)
+            session.message = String(describing: AIError.MissingProvider)
             return
         }
 
         do {
-            let stream = try await provider.type.data.service.streamChatResponse(
-                provider: provider,
-                model: model,
-                messages: session.sortedMessages,
-                temperature: session.temperature
-            )
+            let stream = try await provider.type.data.service
+                .streamChatResponse(
+                    provider: provider,
+                    model: model,
+                    messages: session.sortedMessages,
+                    temperature: session.temperature
+                )
             let assistantMessage = ChatMessage(
                 modelName: model.name,
                 content: "",
@@ -80,18 +83,17 @@ class ChatViewModel: ObservableObject {
                 session: session
             )
 
-            await MainActor.run{
+            await MainActor.run {
                 modelContext.insert(assistantMessage)
                 try? modelContext.save()
             }
-            
-            try await ResponseContentHelper(message: assistantMessage).contentHelper(stream: stream)
+
+            try await ResponseContentHelper(message: assistantMessage)
+                .contentHelper(stream: stream)
         } catch {
             session.message = String(describing: error)
         }
-        
-    }
 
-    
+    }
 
 }
