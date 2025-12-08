@@ -13,8 +13,9 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case openAI = "OpenAI"
     case gemini = "Gemini"
     case zenMux = "ZenMux"
-    case custom = "Custom(OpenAI)"
+    case openRouter = "OpenRouter"
     case cloudflare = "Cloudflare"
+    case custom = "Custom(OpenAI)"
 
     var id: String { self.rawValue }
     var name: String { self.rawValue }
@@ -23,7 +24,8 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
         .grok:AIProviderEnumModel.getGrok(),
         .openAI:AIProviderEnumModel.getOpenAI(),
         .gemini:AIProviderEnumModel.getGemini(),
-        .zenMux:AIProviderEnumModel.getZenMuxAI(),
+        .zenMux:AIProviderEnumModel.getZenMux(),
+        .openRouter:AIProviderEnumModel.getOpenRouter(),
         .deepSeek:AIProviderEnumModel.getDeepSeek(),
         .cloudflare:AIProviderEnumModel.getCloudflare(),
         .custom:AIProviderEnumModel.getCustom()

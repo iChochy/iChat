@@ -58,12 +58,26 @@ class AIProviderEnumModel {
             service: service
         )
     }
-    static func getZenMuxAI() -> AIProviderEnumModel {
+    static func getZenMux() -> AIProviderEnumModel {
         let title = "ZenMux(OpenAI)"
         let icon = ""
         let supportUrl = "https://zenmux.ai/invite/3KA0VI"
         let APIURL = "https://zenmux.ai/api"
         let service = ZenMuxService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
+    static func getOpenRouter() -> AIProviderEnumModel {
+        let title = "OpenRouter(OpenAI)"
+        let icon = ""
+        let supportUrl = "https://openrouter.ai/settings/keys"
+        let APIURL = "https://openrouter.ai/api"
+        let service = OpenRouterService()
         return AIProviderEnumModel(
             title: title,
             icon: icon,
@@ -102,7 +116,7 @@ class AIProviderEnumModel {
         )
     }
     static func getCloudflare() -> AIProviderEnumModel {
-        let title = "Cloudflare(AI Gateway)"
+        let title = "Cloudflare(Compat)"
         let icon = ""
         let supportUrl = "https://developers.cloudflare.com/ai-gateway/usage/chat-completion/"
         let APIURL = "https://gateway.ai.cloudflare.com/v1/{account_id}/{gateway_id}"

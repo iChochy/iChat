@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004310D2EE722A60000F96F /* OpenRouterService.swift */; };
 		1045A4552DFF16140062042A /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045A4542DFF16140062042A /* SessionView.swift */; };
 		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
 		107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1004310D2EE722A60000F96F /* OpenRouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRouterService.swift; sourceTree = "<group>"; };
 		1045A4542DFF16140062042A /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
 		107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenMuxService.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			children = (
 				B457E88E2DBFA74100598C36 /* GrokService.swift */,
 				107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */,
+				1004310D2EE722A60000F96F /* OpenRouterService.swift */,
 				B440D2742DDF72AC0064B3BE /* GeminiService.swift */,
 				B49731592DF1C55C004D9DCD /* DeepSeekService.swift */,
 				107710F12ED89A6E00EB62D4 /* CloudflareService.swift */,
@@ -523,6 +526,7 @@
 				B4A22C712DEAC7180091CB68 /* MarkdownUnorderedListElement.swift in Sources */,
 				B4A22C722DEAC7180091CB68 /* MarkdownBlockquote.swift in Sources */,
 				B4A22C732DEAC7180091CB68 /* MarkdownParagraph.swift in Sources */,
+				1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */,
 				B42DB27F2DFA8C1A005EF8BE /* AssistantView.swift in Sources */,
 				B4A22C772DEC52830091CB68 /* LanguageEnum.swift in Sources */,
 				B4A22C742DEAC7180091CB68 /* MarkdownImage.swift in Sources */,
@@ -690,7 +694,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -729,7 +733,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
