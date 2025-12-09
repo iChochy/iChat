@@ -22,7 +22,7 @@ struct ChatSessionView: View {
         .onTapGesture {
             session.message = ""
         }
-        .textSelection(.enabled)  // 允许选择文本
+//        .textSelection(.enabled)  // 允许选择文本
         .navigationTitle(session.title.isEmpty ? "New Chat" : session.title)
         .toolbar {
             ToolbarItem {

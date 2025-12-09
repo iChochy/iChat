@@ -23,18 +23,16 @@ struct ChatContentView: View {
             case .user:
                 Text(message.content)
                     .padding(10)
-                    .padding(.horizontal,5)
+                    .padding(.horizontal, 5)
                     .fixedSize(horizontal: false, vertical: true)
                     .background(messageBackgroundColor)
                     .foregroundStyle(messageForegroundColor)
                     .cornerRadius(20)
             case .assistant:
-                MarkdownView(markdown:message.content)
+                MarkdownView(markdown: message.content)
             }
         }
     }
-
-
 
     // 根据角色决定背景色
     private var messageBackgroundColor: Color {
@@ -52,7 +50,5 @@ struct ChatContentView: View {
         default: return .primary  // 自动适应浅色/深色模式
         }
     }
-
-    
 
 }

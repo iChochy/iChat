@@ -16,7 +16,7 @@ struct SessionDetailView: View {
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
-                VStack(spacing: 10) {
+                LazyVStack(spacing: 10) {
                     ForEach(messages) { message in
                         ChatMessageView(message: message).id(message)
                     }
@@ -37,7 +37,7 @@ struct SessionDetailView: View {
                     anchor: .bottom
                 )
             }
-            //            .scrollClipDisabled()
+            .scrollClipDisabled()
             .toolbar {
                 if messages.count > 0 {
                     TOCToolbarItemView(messages: messages, proxy: proxy)
