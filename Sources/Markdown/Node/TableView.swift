@@ -9,13 +9,13 @@ import Markdown
 import SwiftUI
 
 // 表格视图
-struct MarkdownTableView: View {
+struct TableView: View {
     let table: Markdown.Table
 
     var body: some View {
         VStack(spacing: 0) {
             // 表格头部
-            MarkdownTableHeadView(
+            TableHeadView(
                 head: table.head,
                 columnAlignments: table.columnAlignments
             )
@@ -23,7 +23,7 @@ struct MarkdownTableView: View {
             ForEach(Array(table.body.rows.enumerated()), id: \.offset) {
                 _,
                 row in
-                MarkdownTableRowView(
+                TableRowView(
                     row: row,
                     isHeader: false,
                     columnAlignments: table.columnAlignments
@@ -41,7 +41,7 @@ struct MarkdownTableView: View {
 }
 
 // 表格头部视图
-struct MarkdownTableHeadView: View {
+struct TableHeadView: View {
     let head: Markdown.Table.Head
     let columnAlignments: [Markdown.Table.ColumnAlignment?]
 
@@ -50,7 +50,7 @@ struct MarkdownTableHeadView: View {
             ForEach(Array(head.cells.enumerated()), id: \.offset) {
                 index,
                 cell in
-                MarkdownTableCellView(
+                TableCellView(
                     cell: cell,
                     isHeader: true,
                     alignment: columnAlignments.indices.contains(index)
@@ -64,7 +64,7 @@ struct MarkdownTableHeadView: View {
 }
 
 // 表格行视图
-struct MarkdownTableRowView: View {
+struct TableRowView: View {
     let row: Markdown.Table.Row
     let isHeader: Bool
     let columnAlignments: [Markdown.Table.ColumnAlignment?]
@@ -74,7 +74,7 @@ struct MarkdownTableRowView: View {
             ForEach(Array(row.cells.enumerated()), id: \.offset) {
                 index,
                 cell in
-                MarkdownTableCellView(
+                TableCellView(
                     cell: cell,
                     isHeader: isHeader,
                     alignment: columnAlignments.indices.contains(index)
@@ -87,7 +87,7 @@ struct MarkdownTableRowView: View {
 }
 
 // 表格单元格视图
-struct MarkdownTableCellView: View {
+struct TableCellView: View {
     let cell: Markdown.Table.Cell
     let isHeader: Bool
     let alignment: Markdown.Table.ColumnAlignment?

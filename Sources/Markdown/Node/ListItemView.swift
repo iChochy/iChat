@@ -22,7 +22,7 @@ struct ListItemView: View {
                 Button(action: {
                     isChecked.toggle()
                 }) {
-                    SwiftUI.Image(systemName: isChecked ? "checkmark.square.fill" : "square")
+                    Image(systemName: isChecked ? "checkmark.square.fill" : "square")
                         .foregroundColor(isChecked ? .blue : .secondary)
                 }
                 .buttonStyle(.plain)

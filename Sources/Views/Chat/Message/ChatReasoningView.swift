@@ -13,32 +13,33 @@ struct ChatReasoningView: View {
 
     var body: some View {
         VStack {
-            HStack {
-                Button(action: {
-                    withAnimation {
-                        message.isExpanded.toggle()
+            GroupBox {
+                HStack {
+                    Button(action: {
+                        withAnimation {
+                            message.isExpanded.toggle()
+                        }
+                    }) {
+                        HStack {
+                            Image(
+                                systemName: message.isExpanded
+                                    ? "chevron.down" : "chevron.right"
+                            ).frame(width: 5)
+                            Text("Thinking ......")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
                     }
-                }) {
-                    HStack {
-                        Image(
-                            systemName: message.isExpanded
-                                ? "chevron.down" : "chevron.right"
-                        ).frame(width: 5)
-                        Text("Thinking")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                        Spacer()
-                    }
+                    .buttonStyle(.borderedProminent)
                 }
-                .buttonStyle(.borderedProminent)
-            }
-            if message.isExpanded {
-                GroupBox{
-                    MarkdownView(markdown:message.reasoning)
+                if message.isExpanded {
+                    ScrollView {
+                        MarkdownView(markdown: message.reasoning)
+                    }.frame(maxHeight: 80)
                 }
             }
         }.frame(maxWidth: 400)
     }
-    
-    
+
 }

@@ -1,3 +1,4 @@
+import Markdown
 //
 //  HeadingView.swift
 //  iMenu
@@ -5,48 +6,42 @@
 //  Created by OSX on 2025/12/3.
 //
 import SwiftUI
-import Markdown
 
 // 代码块视图
 struct CodeBlockView: View {
     let codeBlock: CodeBlock
     @State private var isCopied = false
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             // 代码块头部
             HStack {
-                if let language = codeBlock.language {
-                    Text(language)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                }
-                
+                Text((codeBlock.language ?? "").capitalized)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
                 Spacer()
-                
                 Button(action: {
                     NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString(codeBlock.code, forType: .string)
+                    NSPasteboard.general.setString(
+                        codeBlock.code,
+                        forType: .string
+                    )
                     isCopied = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         isCopied = false
                     }
                 }) {
-                    HStack(spacing: 4) {
-                        SwiftUI.Image(systemName: isCopied ? "checkmark" : "doc.on.doc")
-                        Text(isCopied ? "已复制" : "复制")
-                            .font(.caption)
-                    }
-                    .foregroundColor(isCopied ? .green : .secondary)
+                    Image(systemName: isCopied ? "checkmark" : "doc.on.doc")
+                        .frame(width: 15, height: 15)
+                        .foregroundColor(isCopied ? .green : .secondary)
                 }
                 .buttonStyle(.plain)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 6)
+                .padding(.horizontal, 10)
             }
             .background(Color.gray.opacity(0.15))
-            
+
             // 代码内容
             ScrollView(.horizontal, showsIndicators: false) {
                 Text(codeBlock.code)

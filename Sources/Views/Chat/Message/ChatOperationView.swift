@@ -11,6 +11,7 @@ import SwiftUI
 struct ChatOperationView: View {
     @Environment(\.modelContext) private var modelContext
     var message: ChatMessage
+    @State private var isCopied = false
 
     var body: some View {
         Text(
@@ -25,9 +26,14 @@ struct ChatOperationView: View {
             }
             Button {
                 copyMessage()
+                isCopied = true
+                DispatchQueue.main.asyncAfter(deadline: .now()+1){
+                    isCopied = false
+                }
             } label: {
-                Image(systemName: "document.on.document")
+                Image(systemName: isCopied ? "checkmark" : "doc.on.doc")
                     .frame(width: 15,height: 15)
+                    .foregroundColor(isCopied ? .green : Color.primary)
             }
             Button {
                 deleteMessage()

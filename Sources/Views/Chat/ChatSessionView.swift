@@ -19,9 +19,9 @@ struct ChatSessionView: View {
             SessionView(session: session)
             InputAreaView(session:session)
         }
-        .onTapGesture {
-            session.message = ""
-        }
+//        .onTapGesture {
+//            session.message = ""
+//        }
 //        .textSelection(.enabled)  // 允许选择文本
         .navigationTitle(session.title.isEmpty ? "New Chat" : session.title)
         .toolbar {

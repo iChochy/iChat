@@ -30,7 +30,7 @@ struct AssistantSideView: View {
                     Text("Ask AI Chat")
                     Spacer()
                 }.padding(5)
-                    .background(selectedItem[assistant.id] ?? false ? Color.blue : Color.clear)
+                    .background(selectedItem[assistant.id] ?? false ? Color.accentColor : Color.clear)
                     .foregroundColor(selectedItem[assistant.id] ?? false ? .white : .primary)
                     .cornerRadius(5)
             }.buttonStyle(.plain)
@@ -54,7 +54,7 @@ struct AssistantSideView: View {
                             .shadow(radius: 10)
                     }
                     .padding(5)
-                        .background(selectedItem[item.id] ?? false ? Color.blue : Color.clear)
+                        .background(selectedItem[item.id] ?? false ? Color.accentColor : Color.clear)
                         .foregroundColor(selectedItem[item.id] ?? false ? .white : .primary)
                         .cornerRadius(5)
                 }

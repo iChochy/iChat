@@ -29,7 +29,7 @@ struct MarkdownNodeView: View {
             } else if let thematicBreak = node as? ThematicBreak {
                 ThematicBreakView(thematicBreak:thematicBreak)
             } else if let table = node as? Markdown.Table {
-                MarkdownTableView(table: table)
+                TableView(table: table)
             }
         }
     }

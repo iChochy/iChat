@@ -18,12 +18,12 @@ struct SessionDetailView: View {
             ScrollView {
                 LazyVStack(spacing: 10) {
                     ForEach(messages) { message in
-                        ChatMessageView(message: message).id(message)
+                        ChatMessageView(message: message).id(message.id)
                     }
                 }
                 .padding()
-            }.onChange(of: messages) { oldValue, newValue in
-                if oldValue.count < newValue.count {
+            }.onChange(of: messages.count) { oldValue, newValue in
+                if oldValue < newValue {
                     scrollView(
                         proxy: proxy,
                         message: messages.last,
@@ -38,9 +38,10 @@ struct SessionDetailView: View {
                 )
             }
             .scrollClipDisabled()
+            .padding()
             .toolbar {
                 if messages.count > 0 {
-                    TOCToolbarItemView(messages: messages, proxy: proxy)
+                    TOCMessageView(messages: messages, proxy: proxy)
                 }
             }
         }
@@ -51,7 +52,12 @@ struct SessionDetailView: View {
         message: ChatMessage?,
         anchor: UnitPoint
     ) {
-        proxy.scrollTo(message, anchor: anchor)
+        guard let msg = message else {
+            return
+        }
+        withAnimation{
+            proxy.scrollTo(msg.id, anchor: anchor)
+        }
     }
 
 }

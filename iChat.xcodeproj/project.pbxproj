@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004310D2EE722A60000F96F /* OpenRouterService.swift */; };
 		100431112EE79F4A0000F96F /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 100431102EE79F4A0000F96F /* Markdown */; };
-		100431202EE7A4DF0000F96F /* MarkdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431142EE79F6D0000F96F /* MarkdownTableView.swift */; };
+		100431202EE7A4DF0000F96F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431142EE79F6D0000F96F /* TableView.swift */; };
 		100431212EE7A4DF0000F96F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431152EE79F6D0000F96F /* ImageView.swift */; };
 		100431222EE7A4DF0000F96F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431162EE79F6D0000F96F /* ListItemView.swift */; };
 		100431232EE7A4DF0000F96F /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431172EE79F6D0000F96F /* HeadingView.swift */; };
@@ -63,7 +63,7 @@
 		B497315C2DF1DA49004D9DCD /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497315B2DF1DA49004D9DCD /* MenuBarExtraView.swift */; };
 		B497315F2DF34C54004D9DCD /* CustomMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497315E2DF34C54004D9DCD /* CustomMessageView.swift */; };
 		B49731612DF46B9C004D9DCD /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49731602DF46B9C004D9DCD /* CustomButtonView.swift */; };
-		B49731632DF55EF0004D9DCD /* TOCToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49731622DF55EF0004D9DCD /* TOCToolbarItemView.swift */; };
+		B49731632DF55EF0004D9DCD /* TOCMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49731622DF55EF0004D9DCD /* TOCMessageView.swift */; };
 		B497316D2DF748C2004D9DCD /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497316C2DF748C2004D9DCD /* Prompt.swift */; };
 		B497316F2DF749A2004D9DCD /* PromptEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497316E2DF749A2004D9DCD /* PromptEnum.swift */; };
 		B49731712DF74FAF004D9DCD /* PromptEnumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49731702DF74FAF004D9DCD /* PromptEnumModel.swift */; };
@@ -81,7 +81,7 @@
 		1004310D2EE722A60000F96F /* OpenRouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRouterService.swift; sourceTree = "<group>"; };
 		100431122EE79F6D0000F96F /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 		100431132EE79F6D0000F96F /* MarkdownNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownNodeView.swift; sourceTree = "<group>"; };
-		100431142EE79F6D0000F96F /* MarkdownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTableView.swift; sourceTree = "<group>"; };
+		100431142EE79F6D0000F96F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		100431152EE79F6D0000F96F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		100431162EE79F6D0000F96F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		100431172EE79F6D0000F96F /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		B497315D2DF2F577004D9DCD /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B497315E2DF34C54004D9DCD /* CustomMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageView.swift; sourceTree = "<group>"; };
 		B49731602DF46B9C004D9DCD /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
-		B49731622DF55EF0004D9DCD /* TOCToolbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCToolbarItemView.swift; sourceTree = "<group>"; };
+		B49731622DF55EF0004D9DCD /* TOCMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCMessageView.swift; sourceTree = "<group>"; };
 		B497316C2DF748C2004D9DCD /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 		B497316E2DF749A2004D9DCD /* PromptEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptEnum.swift; sourceTree = "<group>"; };
 		B49731702DF74FAF004D9DCD /* PromptEnumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptEnumModel.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		1004311E2EE79F6D0000F96F /* Node */ = {
 			isa = PBXGroup;
 			children = (
-				100431142EE79F6D0000F96F /* MarkdownTableView.swift */,
+				100431142EE79F6D0000F96F /* TableView.swift */,
 				100431152EE79F6D0000F96F /* ImageView.swift */,
 				100431162EE79F6D0000F96F /* ListItemView.swift */,
 				100431172EE79F6D0000F96F /* HeadingView.swift */,
@@ -222,8 +222,8 @@
 		B42DB2832DFA90DC005EF8BE /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				B49731622DF55EF0004D9DCD /* TOCMessageView.swift */,
 				B457E8922DBFA7DC00598C36 /* ChatMessageView.swift */,
-				B49731622DF55EF0004D9DCD /* TOCToolbarItemView.swift */,
 				B4FECCFB2DE9E34600820ADE /* ChatReasoningView.swift */,
 				B4FECD012DE9F10900820ADE /* ChatContentView.swift */,
 				B4A22C7A2DED73870091CB68 /* ChatOperationView.swift */,
@@ -479,7 +479,7 @@
 			files = (
 				1004312A2EE7A4EA0000F96F /* MarkdownView.swift in Sources */,
 				1004312B2EE7A4EA0000F96F /* MarkdownNodeView.swift in Sources */,
-				100431202EE7A4DF0000F96F /* MarkdownTableView.swift in Sources */,
+				100431202EE7A4DF0000F96F /* TableView.swift in Sources */,
 				100431212EE7A4DF0000F96F /* ImageView.swift in Sources */,
 				100431222EE7A4DF0000F96F /* ListItemView.swift in Sources */,
 				100431232EE7A4DF0000F96F /* HeadingView.swift in Sources */,
@@ -503,7 +503,7 @@
 				B497315F2DF34C54004D9DCD /* CustomMessageView.swift in Sources */,
 				B440D2592DDB512D0064B3BE /* SettingsEnumModel.swift in Sources */,
 				B457E88D2DBFA72000598C36 /* AIProtocol.swift in Sources */,
-				B49731632DF55EF0004D9DCD /* TOCToolbarItemView.swift in Sources */,
+				B49731632DF55EF0004D9DCD /* TOCMessageView.swift in Sources */,
 				B440D2522DD8976A0064B3BE /* SettingsView.swift in Sources */,
 				B440D2612DDB83200064B3BE /* AIProvider.swift in Sources */,
 				1045A4552DFF16140062042A /* SessionView.swift in Sources */,
