@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004310D2EE722A60000F96F /* OpenRouterService.swift */; };
+		100431112EE79F4A0000F96F /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 100431102EE79F4A0000F96F /* Markdown */; };
+		100431202EE7A4DF0000F96F /* MarkdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431142EE79F6D0000F96F /* MarkdownTableView.swift */; };
+		100431212EE7A4DF0000F96F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431152EE79F6D0000F96F /* ImageView.swift */; };
+		100431222EE7A4DF0000F96F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431162EE79F6D0000F96F /* ListItemView.swift */; };
+		100431232EE7A4DF0000F96F /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431172EE79F6D0000F96F /* HeadingView.swift */; };
+		100431242EE7A4DF0000F96F /* ParagraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431182EE79F6D0000F96F /* ParagraphView.swift */; };
+		100431252EE7A4DF0000F96F /* UnorderedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431192EE79F6D0000F96F /* UnorderedListView.swift */; };
+		100431262EE7A4DF0000F96F /* OrderedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004311A2EE79F6D0000F96F /* OrderedListView.swift */; };
+		100431272EE7A4DF0000F96F /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004311B2EE79F6D0000F96F /* CodeBlockView.swift */; };
+		100431282EE7A4DF0000F96F /* BlockQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004311C2EE79F6D0000F96F /* BlockQuoteView.swift */; };
+		100431292EE7A4DF0000F96F /* ThematicBreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004311D2EE79F6D0000F96F /* ThematicBreakView.swift */; };
+		1004312A2EE7A4EA0000F96F /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431122EE79F6D0000F96F /* MarkdownView.swift */; };
+		1004312B2EE7A4EA0000F96F /* MarkdownNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431132EE79F6D0000F96F /* MarkdownNodeView.swift */; };
 		1045A4552DFF16140062042A /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045A4542DFF16140062042A /* SessionView.swift */; };
 		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
 		107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */; };
@@ -57,20 +70,6 @@
 		B49731772DF80282004D9DCD /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49731762DF80282004D9DCD /* Assistant.swift */; };
 		B497317B2DF856C6004D9DCD /* AssistantSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497317A2DF856C6004D9DCD /* AssistantSideView.swift */; };
 		B497317D2DF8580B004D9DCD /* SessionSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497317C2DF8580B004D9DCD /* SessionSideView.swift */; };
-		B4A22C682DEAC7180091CB68 /* MarkdownTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5F2DEAC7180091CB68 /* MarkdownTable.swift */; };
-		B4A22C692DEAC7180091CB68 /* MarkdownHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5A2DEAC7180091CB68 /* MarkdownHeader.swift */; };
-		B4A22C6A2DEAC7180091CB68 /* MarkdownBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C622DEAC7180091CB68 /* MarkdownBlock.swift */; };
-		B4A22C6B2DEAC7180091CB68 /* MarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C632DEAC7180091CB68 /* MarkdownDocument.swift */; };
-		B4A22C6C2DEAC7180091CB68 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C652DEAC7180091CB68 /* Markdown.swift */; };
-		B4A22C6D2DEAC7180091CB68 /* MarkdownCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C582DEAC7180091CB68 /* MarkdownCode.swift */; };
-		B4A22C6E2DEAC7180091CB68 /* MarkdownDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C592DEAC7180091CB68 /* MarkdownDivider.swift */; };
-		B4A22C6F2DEAC7180091CB68 /* MarkdownStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C662DEAC7180091CB68 /* MarkdownStyle.swift */; };
-		B4A22C702DEAC7180091CB68 /* MarkdownList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5C2DEAC7180091CB68 /* MarkdownList.swift */; };
-		B4A22C712DEAC7180091CB68 /* MarkdownUnorderedListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C602DEAC7180091CB68 /* MarkdownUnorderedListElement.swift */; };
-		B4A22C722DEAC7180091CB68 /* MarkdownBlockquote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C572DEAC7180091CB68 /* MarkdownBlockquote.swift */; };
-		B4A22C732DEAC7180091CB68 /* MarkdownParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5E2DEAC7180091CB68 /* MarkdownParagraph.swift */; };
-		B4A22C742DEAC7180091CB68 /* MarkdownImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5B2DEAC7180091CB68 /* MarkdownImage.swift */; };
-		B4A22C752DEAC7180091CB68 /* MarkdownOrderedListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C5D2DEAC7180091CB68 /* MarkdownOrderedListElement.swift */; };
 		B4A22C772DEC52830091CB68 /* LanguageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C762DEC52830091CB68 /* LanguageEnum.swift */; };
 		B4A22C792DEC5E460091CB68 /* AppearanceEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C782DEC5E460091CB68 /* AppearanceEnum.swift */; };
 		B4A22C7B2DED73870091CB68 /* ChatOperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A22C7A2DED73870091CB68 /* ChatOperationView.swift */; };
@@ -80,6 +79,18 @@
 
 /* Begin PBXFileReference section */
 		1004310D2EE722A60000F96F /* OpenRouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRouterService.swift; sourceTree = "<group>"; };
+		100431122EE79F6D0000F96F /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		100431132EE79F6D0000F96F /* MarkdownNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownNodeView.swift; sourceTree = "<group>"; };
+		100431142EE79F6D0000F96F /* MarkdownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTableView.swift; sourceTree = "<group>"; };
+		100431152EE79F6D0000F96F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		100431162EE79F6D0000F96F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		100431172EE79F6D0000F96F /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		100431182EE79F6D0000F96F /* ParagraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphView.swift; sourceTree = "<group>"; };
+		100431192EE79F6D0000F96F /* UnorderedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnorderedListView.swift; sourceTree = "<group>"; };
+		1004311A2EE79F6D0000F96F /* OrderedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedListView.swift; sourceTree = "<group>"; };
+		1004311B2EE79F6D0000F96F /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
+		1004311C2EE79F6D0000F96F /* BlockQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteView.swift; sourceTree = "<group>"; };
+		1004311D2EE79F6D0000F96F /* ThematicBreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThematicBreakView.swift; sourceTree = "<group>"; };
 		1045A4542DFF16140062042A /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
 		107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenMuxService.swift; sourceTree = "<group>"; };
@@ -119,7 +130,6 @@
 		B457E8962DBFA80E00598C36 /* ChatSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionView.swift; sourceTree = "<group>"; };
 		B4806FAC2D9B8047004C952C /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B480702C2D9BB678004C952C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B480702E2D9BB678004C952C /* iChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iChat.entitlements; sourceTree = "<group>"; };
 		B480702F2D9BB678004C952C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B48070312D9BB678004C952C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49731592DF1C55C004D9DCD /* DeepSeekService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekService.swift; sourceTree = "<group>"; };
@@ -134,20 +144,6 @@
 		B49731762DF80282004D9DCD /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		B497317A2DF856C6004D9DCD /* AssistantSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSideView.swift; sourceTree = "<group>"; };
 		B497317C2DF8580B004D9DCD /* SessionSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSideView.swift; sourceTree = "<group>"; };
-		B4A22C572DEAC7180091CB68 /* MarkdownBlockquote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBlockquote.swift; sourceTree = "<group>"; };
-		B4A22C582DEAC7180091CB68 /* MarkdownCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownCode.swift; sourceTree = "<group>"; };
-		B4A22C592DEAC7180091CB68 /* MarkdownDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDivider.swift; sourceTree = "<group>"; };
-		B4A22C5A2DEAC7180091CB68 /* MarkdownHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHeader.swift; sourceTree = "<group>"; };
-		B4A22C5B2DEAC7180091CB68 /* MarkdownImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownImage.swift; sourceTree = "<group>"; };
-		B4A22C5C2DEAC7180091CB68 /* MarkdownList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownList.swift; sourceTree = "<group>"; };
-		B4A22C5D2DEAC7180091CB68 /* MarkdownOrderedListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownOrderedListElement.swift; sourceTree = "<group>"; };
-		B4A22C5E2DEAC7180091CB68 /* MarkdownParagraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownParagraph.swift; sourceTree = "<group>"; };
-		B4A22C5F2DEAC7180091CB68 /* MarkdownTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTable.swift; sourceTree = "<group>"; };
-		B4A22C602DEAC7180091CB68 /* MarkdownUnorderedListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownUnorderedListElement.swift; sourceTree = "<group>"; };
-		B4A22C622DEAC7180091CB68 /* MarkdownBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBlock.swift; sourceTree = "<group>"; };
-		B4A22C632DEAC7180091CB68 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
-		B4A22C652DEAC7180091CB68 /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
-		B4A22C662DEAC7180091CB68 /* MarkdownStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownStyle.swift; sourceTree = "<group>"; };
 		B4A22C762DEC52830091CB68 /* LanguageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageEnum.swift; sourceTree = "<group>"; };
 		B4A22C782DEC5E460091CB68 /* AppearanceEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceEnum.swift; sourceTree = "<group>"; };
 		B4A22C7A2DED73870091CB68 /* ChatOperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOperationView.swift; sourceTree = "<group>"; };
@@ -160,12 +156,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100431112EE79F4A0000F96F /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1004311E2EE79F6D0000F96F /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				100431142EE79F6D0000F96F /* MarkdownTableView.swift */,
+				100431152EE79F6D0000F96F /* ImageView.swift */,
+				100431162EE79F6D0000F96F /* ListItemView.swift */,
+				100431172EE79F6D0000F96F /* HeadingView.swift */,
+				100431182EE79F6D0000F96F /* ParagraphView.swift */,
+				100431192EE79F6D0000F96F /* UnorderedListView.swift */,
+				1004311A2EE79F6D0000F96F /* OrderedListView.swift */,
+				1004311B2EE79F6D0000F96F /* CodeBlockView.swift */,
+				1004311C2EE79F6D0000F96F /* BlockQuoteView.swift */,
+				1004311D2EE79F6D0000F96F /* ThematicBreakView.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		1004311F2EE79F6D0000F96F /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				100431122EE79F6D0000F96F /* MarkdownView.swift */,
+				100431132EE79F6D0000F96F /* MarkdownNodeView.swift */,
+				1004311E2EE79F6D0000F96F /* Node */,
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
 		10C9F6AB2E0528AB00A8719E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,7 +342,6 @@
 			children = (
 				B400B5072DEF3DAB002CF2B4 /* docs */,
 				B48070382D9BB678004C952C /* Sources */,
-				B4A22C672DEAC7180091CB68 /* MarkdownUI */,
 				B4806FAD2D9B8047004C952C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -348,7 +371,7 @@
 				B457E8992DBFA89C00598C36 /* Enums */,
 				10C9F6AB2E0528AB00A8719E /* Helper */,
 				B457E89C2DBFA9BD00598C36 /* Protocols */,
-				B480702E2D9BB678004C952C /* iChat.entitlements */,
+				1004311F2EE79F6D0000F96F /* Markdown */,
 				B48070312D9BB678004C952C /* Assets.xcassets */,
 				B480702D2D9BB678004C952C /* Preview Content */,
 			);
@@ -377,43 +400,6 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
-		B4A22C612DEAC7180091CB68 /* Block Views */ = {
-			isa = PBXGroup;
-			children = (
-				B4A22C572DEAC7180091CB68 /* MarkdownBlockquote.swift */,
-				B4A22C582DEAC7180091CB68 /* MarkdownCode.swift */,
-				B4A22C592DEAC7180091CB68 /* MarkdownDivider.swift */,
-				B4A22C5A2DEAC7180091CB68 /* MarkdownHeader.swift */,
-				B4A22C5B2DEAC7180091CB68 /* MarkdownImage.swift */,
-				B4A22C5C2DEAC7180091CB68 /* MarkdownList.swift */,
-				B4A22C5D2DEAC7180091CB68 /* MarkdownOrderedListElement.swift */,
-				B4A22C5E2DEAC7180091CB68 /* MarkdownParagraph.swift */,
-				B4A22C5F2DEAC7180091CB68 /* MarkdownTable.swift */,
-				B4A22C602DEAC7180091CB68 /* MarkdownUnorderedListElement.swift */,
-			);
-			path = "Block Views";
-			sourceTree = "<group>";
-		};
-		B4A22C642DEAC7180091CB68 /* Document Model */ = {
-			isa = PBXGroup;
-			children = (
-				B4A22C622DEAC7180091CB68 /* MarkdownBlock.swift */,
-				B4A22C632DEAC7180091CB68 /* MarkdownDocument.swift */,
-			);
-			path = "Document Model";
-			sourceTree = "<group>";
-		};
-		B4A22C672DEAC7180091CB68 /* MarkdownUI */ = {
-			isa = PBXGroup;
-			children = (
-				B4A22C612DEAC7180091CB68 /* Block Views */,
-				B4A22C642DEAC7180091CB68 /* Document Model */,
-				B4A22C652DEAC7180091CB68 /* Markdown.swift */,
-				B4A22C662DEAC7180091CB68 /* MarkdownStyle.swift */,
-			);
-			path = MarkdownUI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +417,7 @@
 			);
 			name = iChat;
 			packageProductDependencies = (
+				100431102EE79F4A0000F96F /* Markdown */,
 			);
 			productName = AIClient;
 			productReference = B4806FAC2D9B8047004C952C /* iChat.app */;
@@ -461,6 +448,7 @@
 			mainGroup = B4806FA32D9B8047004C952C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				1004310F2EE79F4A0000F96F /* XCRemoteSwiftPackageReference "swift-markdown" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B4806FAD2D9B8047004C952C /* Products */;
@@ -489,6 +477,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1004312A2EE7A4EA0000F96F /* MarkdownView.swift in Sources */,
+				1004312B2EE7A4EA0000F96F /* MarkdownNodeView.swift in Sources */,
+				100431202EE7A4DF0000F96F /* MarkdownTableView.swift in Sources */,
+				100431212EE7A4DF0000F96F /* ImageView.swift in Sources */,
+				100431222EE7A4DF0000F96F /* ListItemView.swift in Sources */,
+				100431232EE7A4DF0000F96F /* HeadingView.swift in Sources */,
+				100431242EE7A4DF0000F96F /* ParagraphView.swift in Sources */,
+				100431252EE7A4DF0000F96F /* UnorderedListView.swift in Sources */,
+				100431262EE7A4DF0000F96F /* OrderedListView.swift in Sources */,
+				100431272EE7A4DF0000F96F /* CodeBlockView.swift in Sources */,
+				100431282EE7A4DF0000F96F /* BlockQuoteView.swift in Sources */,
+				100431292EE7A4DF0000F96F /* ThematicBreakView.swift in Sources */,
 				B440D2772DDF89CF0064B3BE /* CustomSearchView.swift in Sources */,
 				B440D2752DDF72AC0064B3BE /* GeminiService.swift in Sources */,
 				B4A22C7B2DED73870091CB68 /* ChatOperationView.swift in Sources */,
@@ -514,23 +514,9 @@
 				B440D26A2DDDB6E00064B3BE /* ProviderEditorView.swift in Sources */,
 				B497317D2DF8580B004D9DCD /* SessionSideView.swift in Sources */,
 				107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */,
-				B4A22C682DEAC7180091CB68 /* MarkdownTable.swift in Sources */,
-				B4A22C692DEAC7180091CB68 /* MarkdownHeader.swift in Sources */,
-				B4A22C6A2DEAC7180091CB68 /* MarkdownBlock.swift in Sources */,
-				B4A22C6B2DEAC7180091CB68 /* MarkdownDocument.swift in Sources */,
-				B4A22C6C2DEAC7180091CB68 /* Markdown.swift in Sources */,
-				B4A22C6D2DEAC7180091CB68 /* MarkdownCode.swift in Sources */,
-				B4A22C6E2DEAC7180091CB68 /* MarkdownDivider.swift in Sources */,
-				B4A22C6F2DEAC7180091CB68 /* MarkdownStyle.swift in Sources */,
-				B4A22C702DEAC7180091CB68 /* MarkdownList.swift in Sources */,
-				B4A22C712DEAC7180091CB68 /* MarkdownUnorderedListElement.swift in Sources */,
-				B4A22C722DEAC7180091CB68 /* MarkdownBlockquote.swift in Sources */,
-				B4A22C732DEAC7180091CB68 /* MarkdownParagraph.swift in Sources */,
 				1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */,
 				B42DB27F2DFA8C1A005EF8BE /* AssistantView.swift in Sources */,
 				B4A22C772DEC52830091CB68 /* LanguageEnum.swift in Sources */,
-				B4A22C742DEAC7180091CB68 /* MarkdownImage.swift in Sources */,
-				B4A22C752DEAC7180091CB68 /* MarkdownOrderedListElement.swift in Sources */,
 				B497316D2DF748C2004D9DCD /* Prompt.swift in Sources */,
 				B440D2682DDC60D60064B3BE /* AIProviderEnumModel.swift in Sources */,
 				B4FECCFC2DE9E34600820ADE /* ChatReasoningView.swift in Sources */,
@@ -690,14 +676,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = Sources/iChat.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 9;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -729,14 +713,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = Sources/iChat.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 9;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -784,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1004310F2EE79F4A0000F96F /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		100431102EE79F4A0000F96F /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1004310F2EE79F4A0000F96F /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4806FA42D9B8047004C952C /* Project object */;
 }

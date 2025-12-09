@@ -34,34 +34,11 @@ struct ChatReasoningView: View {
             }
             if message.isExpanded {
                 GroupBox{
-                    Markdown(toMarkdown(), lazy: true)
+                    MarkdownView(markdown:message.reasoning)
                 }
             }
         }.frame(maxWidth: 400)
     }
     
-    private func toMarkdown() -> MarkdownDocument {
-        do {
-            return try MarkdownDocument(message.reasoning)
-        } catch {
-            print(error)
-        }
-        return try! MarkdownDocument("")
-    }
     
-
-    private func convertMarkdown() -> AttributedString {
-        do {
-            let attributedString = try AttributedString(
-                markdown: message.reasoning,
-                options: .init(
-                    interpretedSyntax: .inlineOnlyPreservingWhitespace
-                )
-            )
-            return attributedString
-        } catch {
-            print(error)
-        }
-        return AttributedString("")
-    }
 }

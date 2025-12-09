@@ -29,19 +29,12 @@ struct ChatContentView: View {
                     .foregroundStyle(messageForegroundColor)
                     .cornerRadius(20)
             case .assistant:
-                Markdown(toMarkdown(), lazy: true)
+                MarkdownView(markdown:message.content)
             }
         }
     }
 
-    private func toMarkdown() -> MarkdownDocument {
-        do {
-            return try MarkdownDocument(message.content)
-        } catch {
-            print(error)
-        }
-        return try! MarkdownDocument("")
-    }
+
 
     // 根据角色决定背景色
     private var messageBackgroundColor: Color {
@@ -60,20 +53,6 @@ struct ChatContentView: View {
         }
     }
 
-    private func convertMarkdown(content: String) -> AttributedString {
-        do {
-            let attributedString = try AttributedString(
-                markdown: content,
-                options: .init(
-                    interpretedSyntax: .inlineOnlyPreservingWhitespace
-                )
-            )
-            return attributedString
-        } catch {
-            print(error)
-        }
-        return AttributedString("")
-
-    }
+    
 
 }
