@@ -66,7 +66,7 @@ struct MainView: View {
                 .padding()
             }
             .navigationTitle("Chat Sessions")
-            .navigationSplitViewColumnWidth(min: 180, ideal: 180)
+            .navigationSplitViewColumnWidth(220)
             .toolbar {
                 ToolbarItem {
                     Button {
@@ -92,7 +92,7 @@ struct MainView: View {
                     .id(session)  // 重要: 当 sessionId 改变时，强制刷新 ChatView
             }
         }.onAppear {
-            createNewSession()
+//            createNewSession()
         }
     }
 
