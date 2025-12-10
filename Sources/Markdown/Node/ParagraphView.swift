@@ -1,3 +1,4 @@
+import Markdown
 //
 //  HeadingView.swift
 //  iMenu
@@ -5,23 +6,24 @@
 //  Created by OSX on 2025/12/3.
 //
 import SwiftUI
-import Markdown
 
 // 段落视图
 struct ParagraphView: View {
     let paragraph: Paragraph
-    
+
     var body: some View {
         let content = contentView(for: paragraph)
         content.padding(.vertical, 2)
     }
-    
+
     @ViewBuilder
     func contentView(for paragraph: Paragraph) -> some View {
         // 检查是否包含图片
         if hasImage(in: paragraph) {
             VStack(alignment: .leading, spacing: 8) {
-                ForEach(Array(paragraph.children.enumerated()), id: \.offset) { _, child in
+                ForEach(Array(paragraph.children.enumerated()), id: \.offset) {
+                    _,
+                    child in
                     if let image = child as? Markdown.Image {
                         ImageView(image: image)
                     } else {
@@ -31,9 +33,12 @@ struct ParagraphView: View {
             }
         } else {
             Text(attributedString(for: paragraph))
+                .lineLimit(nil)  // 不限制行数
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
-    
+
     func hasImage(in markup: any Markup) -> Bool {
         for child in markup.children {
             if child is Markdown.Image {
@@ -42,10 +47,10 @@ struct ParagraphView: View {
         }
         return false
     }
-    
+
     func attributedString(for markup: any Markup) -> AttributedString {
         var result = AttributedString()
-        
+
         for child in markup.children {
             if let text = child as? Markdown.Text {
                 result += AttributedString(text.string)
@@ -78,7 +83,7 @@ struct ParagraphView: View {
                 result += attributedString(for: child)
             }
         }
-        
+
         return result
     }
 }

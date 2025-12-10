@@ -55,7 +55,7 @@ struct Main: App {
         MenuBarExtra(isInserted: $isInserted) {
             MenuBarExtraView()
         } label: {
-            Image("Status")
+            Image("Status").renderingMode(.original)
         }
 
         Window("Settings", id: "Settings") {  // 给窗口一个标题和 ID
