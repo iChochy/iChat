@@ -55,7 +55,7 @@ struct Main: App {
         MenuBarExtra(isInserted: $isInserted) {
             MenuBarExtraView()
         } label: {
-            Text("AI")
+            Image("Status")
         }
 
         Window("Settings", id: "Settings") {  // 给窗口一个标题和 ID
