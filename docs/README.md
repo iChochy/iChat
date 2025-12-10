@@ -2,7 +2,7 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat is an intelligent chat tool that supports DeepSeek, Gemini, Grok, OpenAI, and custom AI providers. Developed with SwiftUI and SwiftData, it is a native macOS AI client application.
+iChat is an intelligent chat tool that supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI and SwiftData, it is a native macOS AI client application.
 
 ## Development Environment
 Development Tool: Xcode 16.3   
@@ -10,7 +10,7 @@ Development Technologies: SwiftUI, SwiftData
 System Requirements: macOS 14+   
 
 ## Features
-Currently supports DeepSeek, Gemini, Grok, OpenAI, and custom AI providers.
+Currently supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
 1.  Allows adding, using, and deleting AI service providers.
 2.  Enables loading, adding, using, and deleting models.
 3.  Implements AI conversation functionality with flexible switching between multiple models.
@@ -54,29 +54,34 @@ Currently supports DeepSeek, Gemini, Grok, OpenAI, and custom AI providers.
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
 ## Updates
-### 20250605 (0.1(2))
-*   Added DeepSeek support.
-*   Added Menu Bar quick access.
-*   Updated input box style.
-
-### 20250610 (0.1(3))
-*   Overall style details optimized.
-*   Added conversation table of contents (TOC) navigation.
-
-### 20250619 (0.1(4))
-*   Added AI Assistant settings.
-*   Added customizable prompts.
-*   Added temperature parameter settings.
-*   Overall style details optimized.
+### 20251210(0.1(10))
+* Add More AI providers
+* Optimize support for macOS 26
+* Optimize page lazy loading issues
+* Overall style detail optimizations
 
 ### 20250619(0.1(5))
-*   Enhanced Gemini's thought process display.
-*   Adjusted the styling of the settings button and input field.
-*   Overall style details optimized.
+* Enhanced Gemini's thought process display.
+* Adjusted the styling of the settings button and input field.
+* Overall style details optimized.
 
+### 20250619 (0.1(4))
+* Added AI Assistant settings.
+* Added customizable prompts.
+* Added temperature parameter settings.
+* Overall style details optimized.
+
+### 20250610 (0.1(3))
+* Overall style details optimized.
+* Added conversation table of contents (TOC) navigation.
+
+### 20250605 (0.1(2))
+* Added DeepSeek support.
+* Added Menu Bar quick access.
+* Updated input box style.
 
 ## Acknowledgements:
-MarkdownUI: [https://github.com/apparata/MarkdownUI](https://github.com/apparata/MarkdownUI)
+Swift Markdown: [https://github.com/swiftlang/swift-markdown](https://github.com/swiftlang/swift-markdown)
 
 ## Self-Commentary
 Built for personal enjoyment and ongoing development.   

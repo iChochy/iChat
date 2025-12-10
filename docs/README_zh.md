@@ -2,7 +2,7 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat 是一个智能聊天工具，支持DeepSeek 、Gemini、Grok、OpenAI和自定义AI，使用SwiftUI、SwiftData开发，macOS原生AI客服端
+iChat 是一个智能聊天工具，支持 DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，使用SwiftUI、SwiftData开发，macOS原生AI客服端
 
 ## 开发环境
 开发工具：Xcode 16.3   
@@ -11,7 +11,7 @@ iChat 是一个智能聊天工具，支持DeepSeek 、Gemini、Grok、OpenAI和�
 
 
 ## 功能说明
-现支持DeepSeek、Gemini、Grok、OpenAI，和自定义AI   
+现支持 DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI
 1. 实现了 AI 服务商的添加、使用和删除  
 2. 实现了模型的加载、添加、使用和删除  
 3. 实现了 AI 的会话功能，多个模型灵活切换    
@@ -56,19 +56,10 @@ iChat 是一个智能聊天工具，支持DeepSeek 、Gemini、Grok、OpenAI和�
 
 
 ## 更新
-### 20250605(0.1(2))
-* 添加DeepSeek的支持  
-* 添加MenuBar快速入口  
-* 更新输入框样式 
-
-### 202506010(0.1(3))
-* 整体样式细节优化
-* 添加会话目录导航（TOC）
-
-### 20250619(0.1(4))
-* 添加AI智能体助手设置（Assistant）
-* 添加自定义提示词（Prompt）
-* 添加加温度参数设置（temperature）
+### 20250619(0.1(10))
+* 添加更多的 AI 提供商
+* 优化支持 macOS 26
+* 优化页面懒加载问题
 * 整体样式细节优化
 
 ### 20250619(0.1(5))
@@ -76,8 +67,23 @@ iChat 是一个智能聊天工具，支持DeepSeek 、Gemini、Grok、OpenAI和�
 * 调整设置按钮、输入框的样式
 * 整体样式细节优化
 
+### 20250619(0.1(4))
+* 添加AI智能体助手设置（Assistant）
+* 添加自定义提示词（Prompt）
+* 添加加温度参数设置（temperature）
+* 整体样式细节优化
+
+### 202506010(0.1(3))
+* 整体样式细节优化
+* 添加会话目录导航（TOC）
+
+### 20250605(0.1(2))
+* 添加DeepSeek的支持  
+* 添加MenuBar快速入口  
+* 更新输入框样式 
+
 ## 鸣谢：
-MarkdownUI：[https://github.com/apparata/MarkdownUI](https://github.com/apparata/MarkdownUI)
+Swift Markdown: [https://github.com/swiftlang/swift-markdown](https://github.com/swiftlang/swift-markdown)
 
 ## 自嗨
 自娱自乐，后续持续跟进………………  
