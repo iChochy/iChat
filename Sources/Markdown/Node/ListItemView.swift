@@ -46,6 +46,8 @@ struct ListItemView: View {
                         UnorderedListView(list: nestedList)
                     } else if let nestedList = child as? OrderedList {
                         OrderedListView(list: nestedList)
+                    } else if let table = child as? Markdown.Table {
+                        TableView(table: table)
                     }
                 }
             }

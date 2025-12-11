@@ -60,7 +60,7 @@ Currently supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflar
 * Optimize page lazy loading issues
 * Overall style detail optimizations
 
-### 20250619(0.1(5))
+### 20250822(0.1(5))
 * Enhanced Gemini's thought process display.
 * Adjusted the styling of the settings button and input field.
 * Overall style details optimized.
