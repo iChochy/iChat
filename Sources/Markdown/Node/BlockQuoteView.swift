@@ -26,7 +26,7 @@ struct BlockQuoteView: View {
         .padding(.vertical, 8)
         .overlay(
             Rectangle()
-                .fill(Color.blue.opacity(0.5))
+                .fill(Color.accentColor.opacity(0.5))
                 .frame(width: 4),
             alignment: .leading
         )

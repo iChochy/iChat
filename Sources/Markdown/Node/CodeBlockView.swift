@@ -17,10 +17,6 @@ struct CodeBlockView: View {
             // 代码块头部
             HStack {
                 Text((codeBlock.language ?? "").capitalized)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
                 Spacer()
                 Button(action: {
                     NSPasteboard.general.clearContents()
@@ -38,8 +34,11 @@ struct CodeBlockView: View {
                         .foregroundColor(isCopied ? .green : .secondary)
                 }
                 .buttonStyle(.plain)
-                .padding(.horizontal, 10)
             }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .font(.body.bold())
+            .foregroundColor(.secondary)
             .background(Color.gray.opacity(0.15))
 
             // 代码内容

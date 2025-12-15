@@ -22,9 +22,15 @@
 		1004312A2EE7A4EA0000F96F /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431122EE79F6D0000F96F /* MarkdownView.swift */; };
 		1004312B2EE7A4EA0000F96F /* MarkdownNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100431132EE79F6D0000F96F /* MarkdownNodeView.swift */; };
 		1045A4552DFF16140062042A /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045A4542DFF16140062042A /* SessionView.swift */; };
+		104ACE232EEE84E600AA7F2D /* SharePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE222EEE84DC00AA7F2D /* SharePhotoView.swift */; };
+		104ACE262EEEDB0900AA7F2D /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE252EEEDB0900AA7F2D /* ShareData.swift */; };
+		104ACE272EEEDB0900AA7F2D /* SharePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE242EEEDB0900AA7F2D /* SharePhoto.swift */; };
+		104ACE292EEEE60C00AA7F2D /* ShareFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE282EEEE60C00AA7F2D /* ShareFile.swift */; };
 		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
 		107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */; };
 		10C9F6AD2E05295A00A8719E /* ResponseContentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */; };
+		10EC385A2EEFF98F0077FF43 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC38592EEFF98F0077FF43 /* ShareButtonView.swift */; };
+		10EC385F2EF01ECF0077FF43 /* ImageDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC385E2EF01ECE0077FF43 /* ImageDocument.swift */; };
 		B42DB27F2DFA8C1A005EF8BE /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB27E2DFA8C1A005EF8BE /* AssistantView.swift */; };
 		B42DB2812DFA8F7B005EF8BE /* AssistantEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB2802DFA8F7B005EF8BE /* AssistantEditView.swift */; };
 		B42DB2852DFB0372005EF8BE /* AssistantAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DB2842DFB0372005EF8BE /* AssistantAddView.swift */; };
@@ -92,9 +98,15 @@
 		1004311C2EE79F6D0000F96F /* BlockQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteView.swift; sourceTree = "<group>"; };
 		1004311D2EE79F6D0000F96F /* ThematicBreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThematicBreakView.swift; sourceTree = "<group>"; };
 		1045A4542DFF16140062042A /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		104ACE222EEE84DC00AA7F2D /* SharePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoView.swift; sourceTree = "<group>"; };
+		104ACE242EEEDB0900AA7F2D /* SharePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhoto.swift; sourceTree = "<group>"; };
+		104ACE252EEEDB0900AA7F2D /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		104ACE282EEEE60C00AA7F2D /* ShareFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFile.swift; sourceTree = "<group>"; };
 		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
 		107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenMuxService.swift; sourceTree = "<group>"; };
 		10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContentHelper.swift; sourceTree = "<group>"; };
+		10EC38592EEFF98F0077FF43 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
+		10EC385E2EF01ECE0077FF43 /* ImageDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDocument.swift; sourceTree = "<group>"; };
 		B400B5062DEF3DAB002CF2B4 /* README_zh.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README_zh.md; sourceTree = "<group>"; };
 		B400B5082DEF4199002CF2B4 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
 		B42DB27E2DFA8C1A005EF8BE /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
@@ -166,16 +178,17 @@
 		1004311E2EE79F6D0000F96F /* Node */ = {
 			isa = PBXGroup;
 			children = (
-				100431142EE79F6D0000F96F /* TableView.swift */,
-				100431152EE79F6D0000F96F /* ImageView.swift */,
-				100431162EE79F6D0000F96F /* ListItemView.swift */,
 				100431172EE79F6D0000F96F /* HeadingView.swift */,
+				100431152EE79F6D0000F96F /* ImageView.swift */,
+				100431142EE79F6D0000F96F /* TableView.swift */,
+				1004311B2EE79F6D0000F96F /* CodeBlockView.swift */,
 				100431182EE79F6D0000F96F /* ParagraphView.swift */,
 				100431192EE79F6D0000F96F /* UnorderedListView.swift */,
 				1004311A2EE79F6D0000F96F /* OrderedListView.swift */,
-				1004311B2EE79F6D0000F96F /* CodeBlockView.swift */,
+				100431162EE79F6D0000F96F /* ListItemView.swift */,
 				1004311C2EE79F6D0000F96F /* BlockQuoteView.swift */,
 				1004311D2EE79F6D0000F96F /* ThematicBreakView.swift */,
+				104ACE1E2EEE846F00AA7F2D /* Share */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -188,6 +201,27 @@
 				1004311E2EE79F6D0000F96F /* Node */,
 			);
 			path = Markdown;
+			sourceTree = "<group>";
+		};
+		104ACE1E2EEE846F00AA7F2D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				10EC385E2EF01ECE0077FF43 /* ImageDocument.swift */,
+				104ACE242EEEDB0900AA7F2D /* SharePhoto.swift */,
+				104ACE252EEEDB0900AA7F2D /* ShareData.swift */,
+				104ACE282EEEE60C00AA7F2D /* ShareFile.swift */,
+				104ACE212EEE849F00AA7F2D /* PhotoShare */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		104ACE212EEE849F00AA7F2D /* PhotoShare */ = {
+			isa = PBXGroup;
+			children = (
+				104ACE222EEE84DC00AA7F2D /* SharePhotoView.swift */,
+				10EC38592EEFF98F0077FF43 /* ShareButtonView.swift */,
+			);
+			path = PhotoShare;
 			sourceTree = "<group>";
 		};
 		10C9F6AB2E0528AB00A8719E /* Helper */ = {
@@ -488,6 +522,7 @@
 				100431262EE7A4DF0000F96F /* OrderedListView.swift in Sources */,
 				100431272EE7A4DF0000F96F /* CodeBlockView.swift in Sources */,
 				100431282EE7A4DF0000F96F /* BlockQuoteView.swift in Sources */,
+				104ACE292EEEE60C00AA7F2D /* ShareFile.swift in Sources */,
 				100431292EE7A4DF0000F96F /* ThematicBreakView.swift in Sources */,
 				B440D2772DDF89CF0064B3BE /* CustomSearchView.swift in Sources */,
 				B440D2752DDF72AC0064B3BE /* GeminiService.swift in Sources */,
@@ -520,6 +555,7 @@
 				B497316D2DF748C2004D9DCD /* Prompt.swift in Sources */,
 				B440D2682DDC60D60064B3BE /* AIProviderEnumModel.swift in Sources */,
 				B4FECCFC2DE9E34600820ADE /* ChatReasoningView.swift in Sources */,
+				104ACE232EEE84E600AA7F2D /* SharePhotoView.swift in Sources */,
 				B497316F2DF749A2004D9DCD /* PromptEnum.swift in Sources */,
 				B440D2732DDF50FC0064B3BE /* ModelFetchView.swift in Sources */,
 				B457E8872DBFA6CF00598C36 /* AIProviderEnum.swift in Sources */,
@@ -530,14 +566,18 @@
 				B457E88B2DBFA6EA00598C36 /* ChatSession.swift in Sources */,
 				107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */,
 				B49731612DF46B9C004D9DCD /* CustomButtonView.swift in Sources */,
+				104ACE262EEEDB0900AA7F2D /* ShareData.swift in Sources */,
+				104ACE272EEEDB0900AA7F2D /* SharePhoto.swift in Sources */,
 				B4A22C792DEC5E460091CB68 /* AppearanceEnum.swift in Sources */,
 				B44725D12DC1FA8A00B9B31B /* InputAreaView.swift in Sources */,
 				B49731772DF80282004D9DCD /* Assistant.swift in Sources */,
 				B44725CD2DC1FA6300B9B31B /* SessionDetailView.swift in Sources */,
 				B48070422D9BB678004C952C /* Main.swift in Sources */,
 				B457E8832DBB778A00598C36 /* MainView.swift in Sources */,
+				10EC385F2EF01ECF0077FF43 /* ImageDocument.swift in Sources */,
 				B497315A2DF1C55C004D9DCD /* DeepSeekService.swift in Sources */,
 				B44725CF2DC1FA7300B9B31B /* ChatViewModel.swift in Sources */,
+				10EC385A2EEFF98F0077FF43 /* ShareButtonView.swift in Sources */,
 				B440D25D2DDB55880064B3BE /* ProviderView.swift in Sources */,
 				B440D2702DDE15AF0064B3BE /* ModelAddView.swift in Sources */,
 				B440D2632DDB84290064B3BE /* AIModel.swift in Sources */,
@@ -686,6 +726,14 @@
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -723,6 +771,14 @@
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";

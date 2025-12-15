@@ -21,14 +21,14 @@ struct TableView: View {
             )
             // 表格内容
             ForEach(Array(table.body.rows.enumerated()), id: \.offset) {
-                _,
+                index,
                 row in
+                Divider()
                 TableRowView(
                     row: row,
-                    isHeader: false,
+                    index: index,
                     columnAlignments: table.columnAlignments
                 )
-                Divider()
             }
 
         }
@@ -52,21 +52,21 @@ struct TableHeadView: View {
                 cell in
                 TableCellView(
                     cell: cell,
-                    isHeader: true,
                     alignment: columnAlignments.indices.contains(index)
                         ? columnAlignments[index] : nil
                 )
-
             }
         }
-        .background(Color.gray.opacity(0.1))
+        .background(Color.gray.opacity(0.15))
+        .foregroundStyle(.secondary)
+        .font(.body.bold())
     }
 }
 
 // 表格行视图
 struct TableRowView: View {
     let row: Markdown.Table.Row
-    let isHeader: Bool
+    let index: Int
     let columnAlignments: [Markdown.Table.ColumnAlignment?]
 
     var body: some View {
@@ -76,20 +76,18 @@ struct TableRowView: View {
                 cell in
                 TableCellView(
                     cell: cell,
-                    isHeader: isHeader,
                     alignment: columnAlignments.indices.contains(index)
                         ? columnAlignments[index] : nil
                 )
             }
         }
-        .background(isHeader ? Color.gray.opacity(0.1) : Color.clear)
+        .background(index%2 == 0 ? Color.clear : Color.gray.opacity(0.1))
     }
 }
 
 // 表格单元格视图
 struct TableCellView: View {
     let cell: Markdown.Table.Cell
-    let isHeader: Bool
     let alignment: Markdown.Table.ColumnAlignment?
 
     var body: some View {
@@ -103,7 +101,6 @@ struct TableCellView: View {
                     )
                 )
         }
-        .font(isHeader ? .body.bold() : .body)
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)

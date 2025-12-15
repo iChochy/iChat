@@ -2,7 +2,7 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat is an intelligent chat tool that supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI and SwiftData, it is a native macOS AI client application.
+iChat is an open-source intelligent chat application that supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI, it is a native macOS AI client application.
 
 ## Development Environment
 Development Tool: Xcode 16.3   
