@@ -26,6 +26,7 @@
 		104ACE262EEEDB0900AA7F2D /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE252EEEDB0900AA7F2D /* ShareData.swift */; };
 		104ACE272EEEDB0900AA7F2D /* SharePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE242EEEDB0900AA7F2D /* SharePhoto.swift */; };
 		104ACE292EEEE60C00AA7F2D /* ShareFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104ACE282EEEE60C00AA7F2D /* ShareFile.swift */; };
+		105E1A7B2EF22EA1006C3158 /* MiMoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E1A7A2EF22EA1006C3158 /* MiMoService.swift */; };
 		107710F22ED89A6E00EB62D4 /* CloudflareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107710F12ED89A6E00EB62D4 /* CloudflareService.swift */; };
 		107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */; };
 		10C9F6AD2E05295A00A8719E /* ResponseContentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */; };
@@ -102,6 +103,7 @@
 		104ACE242EEEDB0900AA7F2D /* SharePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhoto.swift; sourceTree = "<group>"; };
 		104ACE252EEEDB0900AA7F2D /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		104ACE282EEEE60C00AA7F2D /* ShareFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFile.swift; sourceTree = "<group>"; };
+		105E1A7A2EF22EA1006C3158 /* MiMoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMoService.swift; sourceTree = "<group>"; };
 		107710F12ED89A6E00EB62D4 /* CloudflareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareService.swift; sourceTree = "<group>"; };
 		107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenMuxService.swift; sourceTree = "<group>"; };
 		10C9F6AC2E05295A00A8719E /* ResponseContentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContentHelper.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				B457E88E2DBFA74100598C36 /* GrokService.swift */,
+				105E1A7A2EF22EA1006C3158 /* MiMoService.swift */,
 				107C67ED2EDEF96100F2FAD5 /* ZenMuxService.swift */,
 				1004310D2EE722A60000F96F /* OpenRouterService.swift */,
 				B440D2742DDF72AC0064B3BE /* GeminiService.swift */,
@@ -547,6 +550,7 @@
 				B440D2552DD899FF0064B3BE /* SettingsEnum.swift in Sources */,
 				B497315C2DF1DA49004D9DCD /* MenuBarExtraView.swift in Sources */,
 				B440D26A2DDDB6E00064B3BE /* ProviderEditorView.swift in Sources */,
+				105E1A7B2EF22EA1006C3158 /* MiMoService.swift in Sources */,
 				B497317D2DF8580B004D9DCD /* SessionSideView.swift in Sources */,
 				107C67EE2EDEF96100F2FAD5 /* ZenMuxService.swift in Sources */,
 				1004310E2EE722A60000F96F /* OpenRouterService.swift in Sources */,
@@ -719,7 +723,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -744,7 +748,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ichochy.AIChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = NO;
@@ -764,7 +768,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -789,7 +793,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ichochy.AIChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = NO;

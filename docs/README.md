@@ -2,7 +2,7 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat is an open-source intelligent chat application that supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI, it is a native macOS AI client application.
+iChat is an open-source intelligent chat application that supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI, it is a native macOS AI client application.
 
 ## Development Environment
 Development Tool: Xcode 16.3   
@@ -10,7 +10,7 @@ Development Technologies: SwiftUI, SwiftData
 System Requirements: macOS 14+   
 
 ## Features
-Currently supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
+Currently supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
 1.  Allows adding, using, and deleting AI service providers.
 2.  Enables loading, adding, using, and deleting models.
 3.  Implements AI conversation functionality with flexible switching between multiple models.
@@ -54,6 +54,10 @@ Currently supports DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflar
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
 ## Updates
+### 20251217(0.2(7))
+* Add Xiaomi MiMo AI providers
+* Overall style detail optimizations
+
 ### 20251210(0.1(10))
 * Add More AI providers
 * Optimize support for macOS 26

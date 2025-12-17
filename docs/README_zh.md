@@ -2,7 +2,7 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat 是一款开源的智能聊天工具，支持 DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，使用 SwiftUI 开发，macOS 原生 AI 客服端
+iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，使用 SwiftUI 开发，macOS 原生 AI 客服端
 
 ## 开发环境
 开发工具：Xcode 16.3   
@@ -11,7 +11,7 @@ iChat 是一款开源的智能聊天工具，支持 DeepSeek 、Gemini、Grok、
 
 
 ## 功能说明
-现支持 DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI
+现支持 MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI
 1. 实现了 AI 服务商的添加、使用和删除  
 2. 实现了模型的加载、添加、使用和删除  
 3. 实现了 AI 的会话功能，多个模型灵活切换    
@@ -56,6 +56,10 @@ iChat 是一款开源的智能聊天工具，支持 DeepSeek 、Gemini、Grok、
 
 
 ## 更新
+### 20251217(0.2(7))
+* 添加Xiaomi MiMo 提供商
+* 整体样式细节优化
+
 ### 20251210(0.1(10))
 * 添加更多的 AI 提供商
 * 优化支持 macOS 26

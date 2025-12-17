@@ -29,6 +29,20 @@ class AIProviderEnumModel {
         self.service = service
     }
 
+    static func getMimo() -> AIProviderEnumModel {
+        let title = "MiMo(Xiaomi)"
+        let icon = ""
+        let supportUrl = "https://platform.xiaomimimo.com/#/console/api-keys"
+        let APIURL = "https://api.xiaomimimo.com"
+        let service = MiMoService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
     static func getGrok() -> AIProviderEnumModel {
         let title = "XAI(Grok)"
         let icon = ""
