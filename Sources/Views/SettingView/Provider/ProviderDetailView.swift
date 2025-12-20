@@ -64,7 +64,10 @@ struct ProviderDetailView: View {
                         NSWorkspace.shared.open(url)
                     } label: {
                         Image(systemName: "safari")
+                            .frame(width: 15, height: 15)
+                            .foregroundStyle(Color.accentColor)
                     }.buttonBorderShape(.circle)
+
                 }
                 Spacer()
                 Button {

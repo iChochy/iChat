@@ -4,7 +4,7 @@
 
 iChat is an open-source intelligent chat application developed with SwiftUI, it is a native macOS AI client application.
 
-Supports GLM, MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
+Supports SiliconFlow, GLM, MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
 
 ## Development Environment
 Development Tool: Xcode 16.3   
@@ -46,7 +46,7 @@ Download: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zi
 
 
 ### 20251219(0.2(8))
-* Add GLM providers
+* Add SiliconFlow, GLM providers
 * Introduce [MDV](https://github.com/ichochy/mdv) to display Markdown
 * Overall style detail optimizations
 

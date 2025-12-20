@@ -10,6 +10,7 @@
 enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case grok = "Grok"
     case deepSeek = "DeepSeek"
+    case siliconFlow = "SiliconFlow"
     case glm = "GLM"
     case mimo = "MiMo"
     case openAI = "OpenAI"
@@ -31,6 +32,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
         .zenMux:AIProviderEnumModel.getZenMux(),
         .openRouter:AIProviderEnumModel.getOpenRouter(),
         .deepSeek:AIProviderEnumModel.getDeepSeek(),
+        .siliconFlow:AIProviderEnumModel.getSiliconFlow(),
         .cloudflare:AIProviderEnumModel.getCloudflare(),
         .custom:AIProviderEnumModel.getCustom()
     ]

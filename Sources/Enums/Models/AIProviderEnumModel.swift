@@ -29,6 +29,20 @@ class AIProviderEnumModel {
         self.service = service
     }
 
+    static func getSiliconFlow() -> AIProviderEnumModel {
+        let title = "SiliconFlow"
+        let icon = ""
+        let supportUrl = "https://cloud.siliconflow.cn/i/tNIsGU0B"
+        let APIURL = "https://api.siliconflow.cn"
+        let service = GrokService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
     static func getGML() -> AIProviderEnumModel {
         let title = "GML(Zhipu)"
         let icon = ""
