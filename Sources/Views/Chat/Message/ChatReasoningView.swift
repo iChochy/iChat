@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MDV
 
 // 推理 View
 struct ChatReasoningView: View {
@@ -35,7 +36,7 @@ struct ChatReasoningView: View {
                 }
                 if message.isExpanded {
                     ScrollView {
-                        MarkdownView(markdown: message.reasoning)
+                        MDView(message.reasoning)
                     }.frame(maxHeight: 80)
                 }
             }

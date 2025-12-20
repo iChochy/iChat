@@ -2,7 +2,9 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat is an open-source intelligent chat application that supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers. Developed with SwiftUI, it is a native macOS AI client application.
+iChat is an open-source intelligent chat application developed with SwiftUI, it is a native macOS AI client application.
+
+Supports GLM, MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
 
 ## Development Environment
 Development Tool: Xcode 16.3   
@@ -10,7 +12,6 @@ Development Technologies: SwiftUI, SwiftData
 System Requirements: macOS 14+   
 
 ## Features
-Currently supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Cloudflare(AI Gateway) and Custom AI providers.
 1.  Allows adding, using, and deleting AI service providers.
 2.  Enables loading, adding, using, and deleting models.
 3.  Implements AI conversation functionality with flexible switching between multiple models.
@@ -24,12 +25,6 @@ Currently supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Clo
 ## Screenshots
 ![Chat.jpg](https://image.ichochy.com/AIChat/Chat.jpg)
 
-![TOC.jpg](https://image.ichochy.com/AIChat/TOC.jpg)
-
-![Assistant.jpg](https://image.ichochy.com/AIChat/Assistant.jpg)
-
-![Assistant Add.jpg](https://image.ichochy.com/AIChat/AssistantAdd.jpg)
-
 ![General.jpg](https://image.ichochy.com/AIChat/General.jpg)
 
 ![Provider.jpg](https://image.ichochy.com/AIChat/Provider.jpg)
@@ -37,23 +32,24 @@ Currently supports MiMo, DeepSeek, Gemini, Grok, OpenAI, ZenMux, OpenRouter, Clo
 ![About.jpg](https://image.ichochy.com/AIChat/About.jpg)
 
 ## About
-### Blog
-[https://ichochy.com](https://ichochy.com)
-
-### Website
-[https://ai.ichochy.com](https://ai.ichochy.com)
-
-### GitHub
-[https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)
-
-### Download
-[https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zip)
+Blog: [https://ichochy.com](https://ichochy.com)  
+Site: [https://ai.ichochy.com](https://ai.ichochy.com)  
+GitHub: [https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)  
+Download: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zip)  
 
 ### Installation Instructions
 **Note:** As the application is not signed with an Apple Developer ID, macOS will display a security warning upon first launch.   
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
 ## Updates
+
+
+
+### 20251219(0.2(8))
+* Add GLM providers
+* Introduce [MDV](https://github.com/ichochy/mdv) to display Markdown
+* Overall style detail optimizations
+
 ### 20251217(0.2(7))
 * Add Xiaomi MiMo AI providers
 * Overall style detail optimizations

@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-struct ModelEditorView: View {
+struct ModelListView: View {
     @Environment(\.modelContext) private var context
     @Bindable var provider: AIProvider
     @State var isPresentedAdd = false

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MDV
 
 // 内容 View
 struct ChatContentView: View {
@@ -29,7 +30,7 @@ struct ChatContentView: View {
                     .foregroundStyle(messageForegroundColor)
                     .cornerRadius(20)
             case .assistant:
-                MarkdownView(markdown: message.content)
+                MDView(message.content)
             }
         }
     }

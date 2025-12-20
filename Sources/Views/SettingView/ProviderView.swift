@@ -29,7 +29,7 @@ struct ProviderView: View {
                 noDataView()
             } else {
                 ForEach(providers) { item in
-                    ProviderEditorView(provider: item)
+                    ProviderDetailView(provider: item)
                 }
             }
         }).scrollContentBackground(.hidden)

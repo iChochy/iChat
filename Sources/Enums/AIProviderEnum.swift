@@ -10,6 +10,7 @@
 enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case grok = "Grok"
     case deepSeek = "DeepSeek"
+    case glm = "GLM"
     case mimo = "MiMo"
     case openAI = "OpenAI"
     case gemini = "Gemini"
@@ -23,7 +24,8 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     
     private static let data:[Self:AIProviderEnumModel] = [
         .grok:AIProviderEnumModel.getGrok(),
-        .mimo:AIProviderEnumModel.getMimo(),
+        .glm:AIProviderEnumModel.getGML(),
+        .mimo:AIProviderEnumModel.getMiMo(),
         .openAI:AIProviderEnumModel.getOpenAI(),
         .gemini:AIProviderEnumModel.getGemini(),
         .zenMux:AIProviderEnumModel.getZenMux(),

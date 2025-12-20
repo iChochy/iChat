@@ -1,22 +1,31 @@
 {
-  "originHash" : "b809819531d430dc5b7a0fb1fb5538d0321c5d541eed52a9990f37c38dd0f98a",
+  "originHash" : "c27a4dc96725db82829e117ed8e700575072c7c478f4402b848e644d370cb306",
   "pins" : [
+    {
+      "identity" : "mdv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iChochy/MDV",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bf1e9eeb2f1f4ca28edc7df45031c3d84ae7586e"
+      }
+    },
     {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftlang/swift-cmark.git",
       "state" : {
-        "revision" : "5d9bdaa4228b381639fff09403e39a04926e2dbe",
-        "version" : "0.7.1"
+        "branch" : "gfm",
+        "revision" : "924936d0427cb25a61169739a7660230bffa6ea6"
       }
     },
     {
       "identity" : "swift-markdown",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-markdown",
+      "location" : "https://github.com/swiftlang/swift-markdown.git",
       "state" : {
-        "revision" : "7d9a5ce307528578dfa777d505496bd5f544ad94",
-        "version" : "0.7.3"
+        "branch" : "main",
+        "revision" : "b2135f426fca19029430fbf26564e953b2d0f3d3"
       }
     }
   ],

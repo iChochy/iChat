@@ -2,7 +2,9 @@
 
 [[中文](https://ai.ichochy.com/README_zh.html)]｜[[English](https://ai.ichochy.com)]
 
-iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，使用 SwiftUI 开发，macOS 原生 AI 客服端
+iChat 是一款开源的智能聊天工具，使用 SwiftUI 开发，macOS 原生 AI 客服端。
+
+支持 GLM、MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，
 
 ## 开发环境
 开发工具：Xcode 16.3   
@@ -11,7 +13,6 @@ iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、
 
 
 ## 功能说明
-现支持 MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI
 1. 实现了 AI 服务商的添加、使用和删除  
 2. 实现了模型的加载、添加、使用和删除  
 3. 实现了 AI 的会话功能，多个模型灵活切换    
@@ -25,12 +26,6 @@ iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、
 ## 截图预览
 ![Chat.jpg](https://image.ichochy.com/AIChat/Chat.jpg)
 
-![TOC.jpg](https://image.ichochy.com/AIChat/TOC.jpg)
-
-![Assistant.jpg](https://image.ichochy.com/AIChat/Assistant.jpg)
-
-![Assistant Add.jpg](https://image.ichochy.com/AIChat/AssistantAdd.jpg)
-
 ![General.jpg](https://image.ichochy.com/AIChat/General.jpg)
 
 ![Provider.jpg](https://image.ichochy.com/AIChat/Provider.jpg)
@@ -38,17 +33,10 @@ iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、
 ![About.jpg](https://image.ichochy.com/AIChat/About.jpg)
 
 ## About
-### 博客
-[https://ichochy.com](https://ichochy.com)
-
-### 网站
-[https://ai.ichochy.com](https://ai.ichochy.com)
-
-### GitHub
-[https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)
-
-### 下载
-[https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zip)
+博客: [https://ichochy.com](https://ichochy.com)  
+网站: [https://ai.ichochy.com](https://ai.ichochy.com)  
+下载: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zip)   
+GitHub: [https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)   
 
 ### 安装说明
 **注意：** 因未使用开发者签名，首次运行会触发 macOS 安全提示。    
@@ -56,8 +44,13 @@ iChat 是一款开源的智能聊天工具，支持 MiMo、DeepSeek 、Gemini、
 
 
 ## 更新
+### 20251219(0.2(8))
+* 添加 GLM 提供商
+* 引入 [MDV](https://github.com/ichochy/mdv) 展示 Markdown
+* 整体样式细节优化
+
 ### 20251217(0.2(7))
-* 添加Xiaomi MiMo 提供商
+* 添加 Xiaomi MiMo 提供商
 * 整体样式细节优化
 
 ### 20251210(0.1(10))

@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-struct ProviderEditorView: View {
+struct ProviderDetailView: View {
     @Environment(\.modelContext) private var context
 
     @Bindable var provider: AIProvider
@@ -50,7 +50,7 @@ struct ProviderEditorView: View {
                         }.buttonStyle(.borderless)
                     }
                 }
-                ModelEditorView(provider: provider)
+                ModelListView(provider: provider)
             }.textFieldStyle(.roundedBorder)
         } header: {
             HStack {
@@ -59,6 +59,14 @@ struct ProviderEditorView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundStyle(Color.accentColor)
+                if let url = URL(string: provider.type.data.supportUrl) {
+                    Button {
+                        NSWorkspace.shared.open(url)
+                    } label: {
+                        Image(systemName: "safari")
+                    }.buttonBorderShape(.circle)
+                }
+                Spacer()
                 Button {
                     showAlert()
                 } label: {
@@ -74,15 +82,6 @@ struct ProviderEditorView: View {
                 } message: {
                     Text(provider.title)
                 }
-                Spacer()
-                if let url = URL(string: provider.type.data.supportUrl) {
-                    Button {
-                        NSWorkspace.shared.open(url)
-                    } label: {
-                        Image(systemName: "safari")
-                    }.buttonBorderShape(.circle)
-                }
-                
             }
         }.padding()
             .padding(.horizontal)

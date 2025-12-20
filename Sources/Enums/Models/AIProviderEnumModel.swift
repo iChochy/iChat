@@ -29,7 +29,22 @@ class AIProviderEnumModel {
         self.service = service
     }
 
-    static func getMimo() -> AIProviderEnumModel {
+    static func getGML() -> AIProviderEnumModel {
+        let title = "GML(Zhipu)"
+        let icon = ""
+        let supportUrl = "https://www.bigmodel.cn/invite?icode=SbhyEoRyatGVt2/j3XXIzn3uFJ1nZ0jLLgipQkYjpcA="
+        let APIURL = "https://open.bigmodel.cn/api/paas/v4"
+        let service = DeepSeekService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
+    
+    static func getMiMo() -> AIProviderEnumModel {
         let title = "MiMo(Xiaomi)"
         let icon = ""
         let supportUrl = "https://platform.xiaomimimo.com/#/console/api-keys"
