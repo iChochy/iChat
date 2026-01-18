@@ -12,11 +12,14 @@ struct MenuBarExtraView: View {
 
     var body: some View {
         Button("Chat") {
-            openChatWindow()
+//            openChatWindow()
+            openWindow(id: "Chat")
+            NSApp.activate(ignoringOtherApps: true)
+            
         }.keyboardShortcut("N")
         Button("Setting..") {
-            NSApp.activate(ignoringOtherApps: true)
             openWindow(id: "Settings")
+            NSApp.activate(ignoringOtherApps: true)
         }.keyboardShortcut(",")
         Divider()
         Button("About"){
@@ -38,13 +41,10 @@ struct MenuBarExtraView: View {
                 window.makeKeyAndOrderFront(nil)
             }
         } else {
-            NSApp.activate(ignoringOtherApps: true)
             openWindow(id: "Chat")
         }
+        NSApp.activate(ignoringOtherApps: true)
     }
 
 }
 
-#Preview {
-    MenuBarExtraView()
-}

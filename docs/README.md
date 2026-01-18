@@ -42,9 +42,6 @@ Download: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zi
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
 ## Updates
-
-
-
 ### 20251219(0.2(8))
 * Add SiliconFlow, GLM providers
 * Introduce [MDV](https://github.com/ichochy/mdv) to display Markdown

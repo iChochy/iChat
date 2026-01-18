@@ -36,8 +36,8 @@ struct Main: App {
     }()
 
     var body: some Scene {
-        WindowGroup(id: "Chat") {
-            //            MarkdownParserView()
+        
+        Window("iChat", id: "Chat") {
             //            AssistantView()
                         MainView()
                 .onAppear(perform: {
@@ -48,10 +48,10 @@ struct Main: App {
                         NSApp.appearance = appearance.name
                     }
                 )
-                .frame(minWidth: 800, minHeight: 500)  // 可以设置最小尺寸
+                .frame(minWidth: 800, minHeight: 500)
         }.modelContainer(sharedModelContainer)
-
         
+
         MenuBarExtra(isInserted: $isInserted) {
             MenuBarExtraView()
         } label: {
@@ -83,14 +83,6 @@ struct Main: App {
                 )
                 .frame(minWidth: 400, minHeight: 400)  // 可以设置最小尺寸
         }.modelContainer(sharedModelContainer)
-
-//         定义你的置顶窗口场景
-//        Window("Pinned Utility Panel", id: "pinned-window") {  // 给窗口一个标题和 ID
-//            WindowView()  // 这是置顶窗口的内容视图
-//                .frame(minWidth: 800, minHeight: 500)  // 可以设置最小尺寸
-//        }
-//         .windowResizability(.contentSize) // 可以让窗口大小根据内容调整，不可手动调整大小
-
     }
 
 }

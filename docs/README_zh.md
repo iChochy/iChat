@@ -4,7 +4,7 @@
 
 iChat 是一款开源的智能聊天工具，使用 SwiftUI 开发，macOS 原生 AI 客服端。
 
-支持 SiliconFlow、 GLM、MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI，
+支持 SiliconFlow、 GLM、MiMo、DeepSeek 、Gemini、Grok、OpenAI、ZenMux、OpenRouter、Cloudflare（AI Gateway）和自定义AI。
 
 ## 开发环境
 开发工具：Xcode 16.3   
@@ -41,6 +41,8 @@ GitHub: [https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)
 ### 安装说明
 **注意：** 因未使用开发者签名，首次运行会触发 macOS 安全提示。    
 **前往 “系统设置 > 隐私与安全性”，选择 “仍要打开”**   
+
+![Open.jpg](https://image.ichochy.com/Blog/Open.jpg)
 
 
 ## 更新

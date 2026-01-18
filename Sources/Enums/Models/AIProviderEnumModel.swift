@@ -43,8 +43,23 @@ class AIProviderEnumModel {
             service: service
         )
     }
+    static func getNIM() -> AIProviderEnumModel {
+        let title = "NIM(NVIDIA)"
+        let icon = ""
+        let supportUrl = "https://build.nvidia.com"
+        let APIURL = "https://integrate.api.nvidia.com"
+        let service = GrokService()
+        return AIProviderEnumModel(
+            title: title,
+            icon: icon,
+            supportUrl: supportUrl,
+            APIURL: APIURL,
+            service: service
+        )
+    }
+    
     static func getGML() -> AIProviderEnumModel {
-        let title = "GML(Zhipu)"
+        let title = "GML(ZhiPu)"
         let icon = ""
         let supportUrl = "https://www.bigmodel.cn/invite?icode=SbhyEoRyatGVt2/j3XXIzn3uFJ1nZ0jLLgipQkYjpcA="
         let APIURL = "https://open.bigmodel.cn/api/paas/v4"
@@ -59,7 +74,7 @@ class AIProviderEnumModel {
     }
     
     static func getMiMo() -> AIProviderEnumModel {
-        let title = "MiMo(Xiaomi)"
+        let title = "MiMo(XiaoMi)"
         let icon = ""
         let supportUrl = "https://platform.xiaomimimo.com/#/console/api-keys"
         let APIURL = "https://api.xiaomimimo.com"
@@ -73,7 +88,7 @@ class AIProviderEnumModel {
         )
     }
     static func getGrok() -> AIProviderEnumModel {
-        let title = "XAI(Grok)"
+        let title = "Grok(XAI)"
         let icon = ""
         let supportUrl = "https://console.x.ai"
         let APIURL = "https://api.x.ai"
@@ -88,7 +103,7 @@ class AIProviderEnumModel {
     }
 
     static func getOpenAI() -> AIProviderEnumModel {
-        let title = "OpenAI(GPT)"
+        let title = "GPT(OpenAI)"
         let icon = ""
         let supportUrl = "https://platform.openai.com/settings/organization/api-keys"
         let APIURL = "https://api.openai.com"
@@ -131,7 +146,7 @@ class AIProviderEnumModel {
     }
 
     static func getGemini() -> AIProviderEnumModel {
-        let title = "Google(Gemini)"
+        let title = "Gemini(Google)"
         let icon = ""
         let supportUrl = "https://aistudio.google.com/apikey"
         let APIURL = "https://generativelanguage.googleapis.com"

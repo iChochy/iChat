@@ -13,6 +13,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
     case siliconFlow = "SiliconFlow"
     case glm = "GLM"
     case mimo = "MiMo"
+    case nvidia = "Nvidia"
     case openAI = "OpenAI"
     case gemini = "Gemini"
     case zenMux = "ZenMux"
@@ -27,6 +28,7 @@ enum AIProviderEnum: String, Codable, CaseIterable, Identifiable {
         .grok:AIProviderEnumModel.getGrok(),
         .glm:AIProviderEnumModel.getGML(),
         .mimo:AIProviderEnumModel.getMiMo(),
+        .nvidia:AIProviderEnumModel.getNIM(),
         .openAI:AIProviderEnumModel.getOpenAI(),
         .gemini:AIProviderEnumModel.getGemini(),
         .zenMux:AIProviderEnumModel.getZenMux(),
