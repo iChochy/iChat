@@ -22,6 +22,22 @@ System Requirements: macOS 14+
 8.  Customizable prompts.
 9.  Customizable AI Assistant agents.
 
+## 🚀 Quick Start
+
+Open iChat Settings and click the + button in the top-left corner to add an AI service provider.  
+Enter your API Key and select available models.  
+Start a new conversation and enjoy smooth streaming AI chat.  
+
+![Open.jpg](https://image.ichochy.com/Blog/Open.jpg)
+
+
+
+## Installation Instructions
+**Note:** As the application is not signed with an Apple Developer ID, macOS will display a security warning upon first launch.   
+**Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
+
+
+
 ## Screenshots
 ![Chat.jpg](https://image.ichochy.com/AIChat/Chat.jpg)
 
@@ -37,9 +53,7 @@ Site: [https://ai.ichochy.com](https://ai.ichochy.com)
 GitHub: [https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)  
 Download: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zip)  
 
-### Installation Instructions
-**Note:** As the application is not signed with an Apple Developer ID, macOS will display a security warning upon first launch.   
-**Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
+
 
 ## Updates
 ### 20251219(0.2(8))
