@@ -28,14 +28,12 @@ Open iChat Settings and click the + button in the top-left corner to add an AI s
 Enter your API Key and select available models.  
 Start a new conversation and enjoy smooth streaming AI chat.  
 
-![Open.jpg](https://image.ichochy.com/Blog/Open.jpg)
-
-
 
 ## Installation Instructions
 **Note:** As the application is not signed with an Apple Developer ID, macOS will display a security warning upon first launch.   
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
+![Open.jpg](https://image.ichochy.com/Blog/Open.jpg)
 
 
 ## Screenshots
