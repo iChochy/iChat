@@ -77,9 +77,6 @@ Download: [https://file.ichochy.com/iChat.zip](https://file.ichochy.com/iChat.zi
 * Added Menu Bar quick access.
 * Updated input box style.
 
-## Acknowledgements:
-Swift Markdown: [https://github.com/swiftlang/swift-markdown](https://github.com/swiftlang/swift-markdown)
-
 ## Self-Commentary
 Built for personal enjoyment and ongoing development.   
 Features are still under active development and continuously being improved.
