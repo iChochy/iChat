@@ -29,7 +29,7 @@ Enter your API Key and select available models.
 Start a new conversation and enjoy smooth streaming AI chat.  
 
 
-## Installation Instructions
+### Installation Instructions
 **Note:** As the application is not signed with an Apple Developer ID, macOS will display a security warning upon first launch.   
 **Please go to "System Settings > Privacy & Security" and click "Open Anyway"** to proceed.
 
