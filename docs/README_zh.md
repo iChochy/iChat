@@ -81,9 +81,6 @@ GitHub: [https://github.com/iChochy/iChat](https://github.com/iChochy/iChat)
 * 添加MenuBar快速入口  
 * 更新输入框样式 
 
-## 鸣谢：
-Swift Markdown: [https://github.com/swiftlang/swift-markdown](https://github.com/swiftlang/swift-markdown)
-
 ## 自嗨
 自娱自乐，后续持续跟进………………  
 功能还在开发完善中 ……………………  
